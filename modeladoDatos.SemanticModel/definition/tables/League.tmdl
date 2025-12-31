@@ -1,0 +1,42 @@
+table League
+	lineageTag: 007b7576-ef12-4833-bfed-da70a39d3b58
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b4f2c254-441b-494e-bf77-8ac9bd466ce0
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 31b76b14-3b7f-41ea-b736-90bd620b60d8
+		summarizeBy: none
+		sourceColumn: country_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 046a1779-92cb-4204-919a-e4cc14e892e1
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition League = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    League_Sheet = Origen{[Item="League",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(League_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"country_id", Int64.Type}, {"name", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

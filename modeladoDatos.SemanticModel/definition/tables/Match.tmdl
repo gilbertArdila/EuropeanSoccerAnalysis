@@ -1,0 +1,1414 @@
+table Match
+	isHidden
+	lineageTag: 2e2c57da-29da-4612-885a-cc8d964872ae
+
+	column id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d41ee764-5633-46dc-95d0-7701252046f2
+		summarizeBy: sum
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 239088dc-80ba-4b3e-9661-0f10358aaafc
+		summarizeBy: none
+		sourceColumn: country_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a2f47829-7419-42d6-8e7b-2596e2da0deb
+		summarizeBy: none
+		sourceColumn: league_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column season
+		dataType: string
+		isHidden
+		lineageTag: 5f92463a-2b6c-454e-8122-992543b504d6
+		summarizeBy: none
+		sourceColumn: season
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column stage
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a6d2bc6d-7254-4977-9484-43138d528dc7
+		summarizeBy: sum
+		sourceColumn: stage
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 35cfab2e-24d4-4a0b-a156-2891e4c72411
+		summarizeBy: none
+		sourceColumn: date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column match_api_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 365ae249-0d01-41be-b821-1d3029f5b6ff
+		summarizeBy: none
+		sourceColumn: match_api_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_team_api_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7852591f-011c-457d-bf5a-409ef550754e
+		summarizeBy: none
+		sourceColumn: home_team_api_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_team_api_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3eac791e-68f4-4145-81bb-da9c02838f05
+		summarizeBy: sum
+		sourceColumn: away_team_api_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_team_goal
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 68362c44-d87c-465a-a868-ab47cdbe9df8
+		summarizeBy: sum
+		sourceColumn: home_team_goal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_team_goal
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4e275211-4fb6-4268-a5f9-833bcf2d968f
+		summarizeBy: sum
+		sourceColumn: away_team_goal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1c954c1b-a9eb-48f1-aad7-9fe4e13c453d
+		summarizeBy: sum
+		sourceColumn: home_player_X1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 852e6517-5094-4cc5-82b7-1e257a613252
+		summarizeBy: sum
+		sourceColumn: home_player_X2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b2e003a0-328b-490f-93d6-fe951f6b2d93
+		summarizeBy: sum
+		sourceColumn: home_player_X3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 11ec28a9-4585-456a-976f-f65e556349fa
+		summarizeBy: sum
+		sourceColumn: home_player_X4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a4601486-5b93-43a0-aacf-07807839a955
+		summarizeBy: sum
+		sourceColumn: home_player_X5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 87df4fbe-9aae-4f02-b67a-595ffb148d87
+		summarizeBy: sum
+		sourceColumn: home_player_X6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7ef3b386-fa92-4bed-83d9-29389e179f57
+		summarizeBy: sum
+		sourceColumn: home_player_X7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8d2dea7a-76f3-4965-b94d-d002c2969e3e
+		summarizeBy: sum
+		sourceColumn: home_player_X8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4456b9c9-e30f-48fe-9f5e-d6ea36ab7fb3
+		summarizeBy: sum
+		sourceColumn: home_player_X9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e8cd2a62-5da2-4756-9395-3b6c9a46fa4c
+		summarizeBy: sum
+		sourceColumn: home_player_X10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_X11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f2e8049e-bda7-4ccd-84d1-4fa428b386cf
+		summarizeBy: sum
+		sourceColumn: home_player_X11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d9262756-d8be-466b-833f-fabf97093d46
+		summarizeBy: sum
+		sourceColumn: away_player_X1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 73fdf505-8528-45d3-955a-e04817d2b177
+		summarizeBy: sum
+		sourceColumn: away_player_X2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 301faa4d-8ad3-45b1-b531-98a76f087d72
+		summarizeBy: sum
+		sourceColumn: away_player_X3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 82837b47-2edd-45a1-b91c-2946865d8054
+		summarizeBy: sum
+		sourceColumn: away_player_X4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9c770672-4bd1-4cae-a044-29d49eb5da6b
+		summarizeBy: sum
+		sourceColumn: away_player_X5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6ce87a1a-666d-4bf6-8f9f-59022054877d
+		summarizeBy: sum
+		sourceColumn: away_player_X6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1bc17180-2608-4f51-91d8-6c2981dca9f6
+		summarizeBy: sum
+		sourceColumn: away_player_X7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 864d3265-9a42-4b4e-9332-d0efa8bb734a
+		summarizeBy: sum
+		sourceColumn: away_player_X8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b5e94738-0a99-4748-a6a6-4d006b058955
+		summarizeBy: sum
+		sourceColumn: away_player_X9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2fc18a12-27ee-4523-857c-6385f81ac20f
+		summarizeBy: sum
+		sourceColumn: away_player_X10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_X11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 23a945e7-bc1d-40da-b05f-0646b8e51f8b
+		summarizeBy: sum
+		sourceColumn: away_player_X11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 978106a0-e8ae-429e-98b1-95546ff43b08
+		summarizeBy: sum
+		sourceColumn: home_player_Y1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9ce19500-ebc4-4d20-a76c-ec65573ffd47
+		summarizeBy: sum
+		sourceColumn: home_player_Y2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 050212e4-9655-4fb4-8d5c-903b69bafb22
+		summarizeBy: sum
+		sourceColumn: home_player_Y3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: afe468b7-850f-4e3e-ab79-418958aab576
+		summarizeBy: sum
+		sourceColumn: home_player_Y4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7e03e0e9-93a6-49da-8707-e9b09999a6e9
+		summarizeBy: sum
+		sourceColumn: home_player_Y5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 211784cb-2dac-4756-aef5-e1c8d682321b
+		summarizeBy: sum
+		sourceColumn: home_player_Y6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1da0b707-9363-442f-b41f-dee1f46a47fd
+		summarizeBy: sum
+		sourceColumn: home_player_Y7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1a683c83-effc-4768-8c9f-89fd03424908
+		summarizeBy: sum
+		sourceColumn: home_player_Y8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f95046cc-c6cd-46ff-890a-c1e9eeb68342
+		summarizeBy: sum
+		sourceColumn: home_player_Y9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 826f72f3-cb33-4815-b597-dbd7a8892845
+		summarizeBy: sum
+		sourceColumn: home_player_Y10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_Y11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 53f5b440-6b2a-4ae2-9015-35ebc02a36a0
+		summarizeBy: sum
+		sourceColumn: home_player_Y11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 04a61e3b-dbda-44df-8e6e-246f514a3b22
+		summarizeBy: sum
+		sourceColumn: away_player_Y1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d225bf1e-e94c-4b35-9fd8-e9bfc375cf40
+		summarizeBy: sum
+		sourceColumn: away_player_Y2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c8d322cb-ff2b-4ce1-98b3-0125a406470f
+		summarizeBy: sum
+		sourceColumn: away_player_Y3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0a25cd42-3222-4f24-8d4a-dacae3ae34ae
+		summarizeBy: sum
+		sourceColumn: away_player_Y4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d121ea7f-43a5-410f-8053-9d74fd3296d7
+		summarizeBy: sum
+		sourceColumn: away_player_Y5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fcdaf1e1-059e-42cf-90be-bc1d0168454d
+		summarizeBy: sum
+		sourceColumn: away_player_Y6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d1a823cf-80bb-4179-8619-a8281af1a0d5
+		summarizeBy: sum
+		sourceColumn: away_player_Y7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 91df90e0-c0d3-403a-89b4-041791caf7b6
+		summarizeBy: sum
+		sourceColumn: away_player_Y8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 792cf8f9-ee5f-463a-aa0a-45e2761e3006
+		summarizeBy: sum
+		sourceColumn: away_player_Y9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d111c8f2-ab75-41b2-b047-12e867b5d868
+		summarizeBy: sum
+		sourceColumn: away_player_Y10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_Y11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a97914a7-8a87-4344-891a-daf3c53a290f
+		summarizeBy: sum
+		sourceColumn: away_player_Y11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5e623cc5-a583-4cf9-b512-5cf837bd09f9
+		summarizeBy: sum
+		sourceColumn: home_player_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 00f9286c-94e4-4321-806d-77d276b1188d
+		summarizeBy: sum
+		sourceColumn: home_player_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3a65f349-09ee-4841-ba44-40702608cfc5
+		summarizeBy: sum
+		sourceColumn: home_player_3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4b974654-8b07-4942-a929-7c0384994e69
+		summarizeBy: sum
+		sourceColumn: home_player_4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e8ab25f6-9150-4c08-a8d1-6e7b41bfd1d0
+		summarizeBy: sum
+		sourceColumn: home_player_5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6de864b9-ee00-4e19-8e95-231a23c4a0ce
+		summarizeBy: sum
+		sourceColumn: home_player_6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e1126a41-5af0-448f-b092-f9a1974e87cd
+		summarizeBy: sum
+		sourceColumn: home_player_7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ad8ea719-a4f1-4922-b452-a2d082bc99b7
+		summarizeBy: sum
+		sourceColumn: home_player_8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8eacd4ba-d778-4805-b2cd-e1110a988b09
+		summarizeBy: sum
+		sourceColumn: home_player_9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5c8571f9-0cfc-4b29-8553-1710d884a326
+		summarizeBy: sum
+		sourceColumn: home_player_10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_player_11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5b8a50b0-fa52-47bf-b0ae-7a6629ba2412
+		summarizeBy: sum
+		sourceColumn: home_player_11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_1
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f7a07bb5-6946-4a68-9d73-de99632977b5
+		summarizeBy: sum
+		sourceColumn: away_player_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_2
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 68dc1c62-2adc-4706-97a1-a012b1dbb85d
+		summarizeBy: sum
+		sourceColumn: away_player_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_3
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2c2e597e-dadb-4ee5-bcbe-d738043cca46
+		summarizeBy: sum
+		sourceColumn: away_player_3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_4
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: dc685d39-6929-49a2-a7e8-528da9248612
+		summarizeBy: sum
+		sourceColumn: away_player_4
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_5
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 07876fb1-952a-408b-b883-0d4e72bcff97
+		summarizeBy: sum
+		sourceColumn: away_player_5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_6
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2ed76b96-a091-4fdf-ac27-4be61adbf06e
+		summarizeBy: sum
+		sourceColumn: away_player_6
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_7
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0338a0b7-6856-470c-9df5-d57c1ca646aa
+		summarizeBy: sum
+		sourceColumn: away_player_7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_8
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4d3c9d4a-8c7b-4743-989b-6c1e31d2f46e
+		summarizeBy: sum
+		sourceColumn: away_player_8
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_9
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1591562f-2c51-4dd6-8d67-3375f731a496
+		summarizeBy: sum
+		sourceColumn: away_player_9
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_10
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8b017281-baaa-4433-a076-0a9ff1f679bc
+		summarizeBy: sum
+		sourceColumn: away_player_10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column away_player_11
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a55160e6-2981-468c-bf26-7e33b7b79f5f
+		summarizeBy: sum
+		sourceColumn: away_player_11
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column goal
+		dataType: string
+		isHidden
+		lineageTag: 3823a30b-07ac-46fb-b06a-e54b2ef8fd47
+		summarizeBy: none
+		sourceColumn: goal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shoton
+		dataType: string
+		isHidden
+		lineageTag: 56b8ef19-fb29-475b-8fa9-c028927e9e83
+		summarizeBy: none
+		sourceColumn: shoton
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shotoff
+		dataType: string
+		isHidden
+		lineageTag: 619a9d0f-3247-4dc7-9bfa-5e636167506d
+		summarizeBy: none
+		sourceColumn: shotoff
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column foulcommit
+		dataType: string
+		isHidden
+		lineageTag: abffd856-4da0-4d2f-8348-ed67552f1019
+		summarizeBy: none
+		sourceColumn: foulcommit
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column card
+		dataType: string
+		isHidden
+		lineageTag: 4d1782d3-6d50-41d0-90ae-f2111d17dd83
+		summarizeBy: none
+		sourceColumn: card
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column cross
+		dataType: string
+		isHidden
+		lineageTag: 511d91f1-1174-425d-8e24-cf440badfae8
+		summarizeBy: none
+		sourceColumn: cross
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column corner
+		dataType: string
+		isHidden
+		lineageTag: 93997822-dfbf-4b8c-89ec-09f850deb3e0
+		summarizeBy: none
+		sourceColumn: corner
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column possession
+		dataType: string
+		isHidden
+		lineageTag: 4540d4b5-bd5d-45b8-b749-99d8d0c8c36c
+		summarizeBy: none
+		sourceColumn: possession
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column B365H
+		dataType: double
+		isHidden
+		lineageTag: 9d5cbf9a-a6ad-49b4-8795-7fac72e506f6
+		summarizeBy: sum
+		sourceColumn: B365H
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column B365D
+		dataType: double
+		isHidden
+		lineageTag: b4264bdf-83e9-49db-90e1-12070ecddc96
+		summarizeBy: sum
+		sourceColumn: B365D
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column B365A
+		dataType: double
+		isHidden
+		lineageTag: 4f0b8ea1-f097-4f87-b6b4-83386d99511d
+		summarizeBy: sum
+		sourceColumn: B365A
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BWH
+		dataType: double
+		isHidden
+		lineageTag: 192fce15-198e-446a-ac83-a56cb7084ef6
+		summarizeBy: sum
+		sourceColumn: BWH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BWD
+		dataType: double
+		isHidden
+		lineageTag: 9982a305-544e-4e6e-8779-0b7f833d93ca
+		summarizeBy: sum
+		sourceColumn: BWD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BWA
+		dataType: double
+		isHidden
+		lineageTag: 5baa4872-169b-473c-aa07-6c6a12b441d3
+		summarizeBy: sum
+		sourceColumn: BWA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IWH
+		dataType: double
+		isHidden
+		lineageTag: 4bc569eb-9026-4a60-a870-1e9b7aff8a5d
+		summarizeBy: sum
+		sourceColumn: IWH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IWD
+		dataType: double
+		isHidden
+		lineageTag: b1fea240-20b7-4057-8e0f-724ffa46204e
+		summarizeBy: sum
+		sourceColumn: IWD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IWA
+		dataType: double
+		isHidden
+		lineageTag: f3d4e20f-0b52-4d0a-9497-80588427b0e9
+		summarizeBy: sum
+		sourceColumn: IWA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LBH
+		dataType: double
+		isHidden
+		lineageTag: 4f8eb7e3-e2d5-4aa0-964d-5b0bf1827998
+		summarizeBy: sum
+		sourceColumn: LBH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LBD
+		dataType: double
+		isHidden
+		lineageTag: 65415faf-23c1-45f4-8fab-d3e3dad77ad5
+		summarizeBy: sum
+		sourceColumn: LBD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LBA
+		dataType: double
+		isHidden
+		lineageTag: 9e27db46-4525-40d7-bc3f-a174701a31dc
+		summarizeBy: sum
+		sourceColumn: LBA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PSH
+		dataType: string
+		isHidden
+		lineageTag: 68a18834-3b17-4d57-8d63-ee8755243e38
+		summarizeBy: none
+		sourceColumn: PSH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column PSD
+		dataType: string
+		isHidden
+		lineageTag: 7f4b5a8f-c348-4e9d-a166-90e831e23256
+		summarizeBy: none
+		sourceColumn: PSD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column PSA
+		dataType: string
+		isHidden
+		lineageTag: 20698c9c-72c3-4e10-95de-7172d83cc3ad
+		summarizeBy: none
+		sourceColumn: PSA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column WHH
+		dataType: double
+		isHidden
+		lineageTag: 56af06b5-4869-46b7-aa3d-9b6a18abb168
+		summarizeBy: sum
+		sourceColumn: WHH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WHD
+		dataType: double
+		isHidden
+		lineageTag: 861ab677-e89c-4be9-8e2a-45448c0026bc
+		summarizeBy: sum
+		sourceColumn: WHD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WHA
+		dataType: double
+		isHidden
+		lineageTag: 20887426-6090-4ae7-8f9a-53a7f2d25e13
+		summarizeBy: sum
+		sourceColumn: WHA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SJH
+		dataType: double
+		isHidden
+		lineageTag: 79079bbe-f62b-46f1-898b-5bf1e9dbf683
+		summarizeBy: sum
+		sourceColumn: SJH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SJD
+		dataType: double
+		isHidden
+		lineageTag: a7450e93-9222-484f-8727-83bb0b067b81
+		summarizeBy: sum
+		sourceColumn: SJD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SJA
+		dataType: double
+		isHidden
+		lineageTag: 615c8372-d314-4213-b04f-51aa00bdb011
+		summarizeBy: sum
+		sourceColumn: SJA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VCH
+		dataType: double
+		isHidden
+		lineageTag: 70f29c39-fc11-4a49-a95c-70e2b563df20
+		summarizeBy: sum
+		sourceColumn: VCH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VCD
+		dataType: double
+		isHidden
+		lineageTag: c9a9f5ef-9198-40d4-a46f-a76051629def
+		summarizeBy: sum
+		sourceColumn: VCD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VCA
+		dataType: double
+		isHidden
+		lineageTag: 4862e290-5877-42bc-9669-7134f6ff1d1c
+		summarizeBy: sum
+		sourceColumn: VCA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GBH
+		dataType: double
+		isHidden
+		lineageTag: 5c212c83-1d8a-4b74-b74e-f95f2be86695
+		summarizeBy: sum
+		sourceColumn: GBH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GBD
+		dataType: double
+		isHidden
+		lineageTag: 0451546a-fc8b-4422-b8c3-67180fb3cc7e
+		summarizeBy: sum
+		sourceColumn: GBD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GBA
+		dataType: double
+		isHidden
+		lineageTag: 02c7f186-673d-4425-8e9c-d3832fdccbeb
+		summarizeBy: sum
+		sourceColumn: GBA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BSH
+		dataType: double
+		isHidden
+		lineageTag: 472d91a5-8cb0-4fd0-a984-ac8ace1e6784
+		summarizeBy: sum
+		sourceColumn: BSH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BSD
+		dataType: double
+		isHidden
+		lineageTag: 466a35fd-f09a-492b-98df-ef495cfd75f5
+		summarizeBy: sum
+		sourceColumn: BSD
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BSA
+		dataType: double
+		isHidden
+		lineageTag: 2a710860-0e55-4a51-b30f-feff3b01abad
+		summarizeBy: sum
+		sourceColumn: BSA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Match = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Match_Sheet = Origen{[Item="Match",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Match_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"country_id", Int64.Type}, {"league_id", Int64.Type}, {"season", type text}, {"stage", Int64.Type}, {"date", type datetime}, {"match_api_id", Int64.Type}, {"home_team_api_id", Int64.Type}, {"away_team_api_id", Int64.Type}, {"home_team_goal", Int64.Type}, {"away_team_goal", Int64.Type}, {"home_player_X1", Int64.Type}, {"home_player_X2", Int64.Type}, {"home_player_X3", Int64.Type}, {"home_player_X4", Int64.Type}, {"home_player_X5", Int64.Type}, {"home_player_X6", Int64.Type}, {"home_player_X7", Int64.Type}, {"home_player_X8", Int64.Type}, {"home_player_X9", Int64.Type}, {"home_player_X10", Int64.Type}, {"home_player_X11", Int64.Type}, {"away_player_X1", Int64.Type}, {"away_player_X2", Int64.Type}, {"away_player_X3", Int64.Type}, {"away_player_X4", Int64.Type}, {"away_player_X5", Int64.Type}, {"away_player_X6", Int64.Type}, {"away_player_X7", Int64.Type}, {"away_player_X8", Int64.Type}, {"away_player_X9", Int64.Type}, {"away_player_X10", Int64.Type}, {"away_player_X11", Int64.Type}, {"home_player_Y1", Int64.Type}, {"home_player_Y2", Int64.Type}, {"home_player_Y3", Int64.Type}, {"home_player_Y4", Int64.Type}, {"home_player_Y5", Int64.Type}, {"home_player_Y6", Int64.Type}, {"home_player_Y7", Int64.Type}, {"home_player_Y8", Int64.Type}, {"home_player_Y9", Int64.Type}, {"home_player_Y10", Int64.Type}, {"home_player_Y11", Int64.Type}, {"away_player_Y1", Int64.Type}, {"away_player_Y2", Int64.Type}, {"away_player_Y3", Int64.Type}, {"away_player_Y4", Int64.Type}, {"away_player_Y5", Int64.Type}, {"away_player_Y6", Int64.Type}, {"away_player_Y7", Int64.Type}, {"away_player_Y8", Int64.Type}, {"away_player_Y9", Int64.Type}, {"away_player_Y10", Int64.Type}, {"away_player_Y11", Int64.Type}, {"home_player_1", Int64.Type}, {"home_player_2", Int64.Type}, {"home_player_3", Int64.Type}, {"home_player_4", Int64.Type}, {"home_player_5", Int64.Type}, {"home_player_6", Int64.Type}, {"home_player_7", Int64.Type}, {"home_player_8", Int64.Type}, {"home_player_9", Int64.Type}, {"home_player_10", Int64.Type}, {"home_player_11", Int64.Type}, {"away_player_1", Int64.Type}, {"away_player_2", Int64.Type}, {"away_player_3", Int64.Type}, {"away_player_4", Int64.Type}, {"away_player_5", Int64.Type}, {"away_player_6", Int64.Type}, {"away_player_7", Int64.Type}, {"away_player_8", Int64.Type}, {"away_player_9", Int64.Type}, {"away_player_10", Int64.Type}, {"away_player_11", Int64.Type}, {"goal", type any}, {"shoton", type any}, {"shotoff", type any}, {"foulcommit", type any}, {"card", type any}, {"cross", type any}, {"corner", type any}, {"possession", type any}, {"B365H", type number}, {"B365D", type number}, {"B365A", type number}, {"BWH", type number}, {"BWD", type number}, {"BWA", type number}, {"IWH", type number}, {"IWD", type number}, {"IWA", type number}, {"LBH", type number}, {"LBD", type number}, {"LBA", type number}, {"PSH", type any}, {"PSD", type any}, {"PSA", type any}, {"WHH", type number}, {"WHD", type number}, {"WHA", type number}, {"SJH", type number}, {"SJD", type number}, {"SJA", type number}, {"VCH", type number}, {"VCD", type number}, {"VCA", type number}, {"GBH", type number}, {"GBD", type number}, {"GBA", type number}, {"BSH", type number}, {"BSD", type number}, {"BSA", type number}})
+				in
+				    #"Tipo cambiado"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

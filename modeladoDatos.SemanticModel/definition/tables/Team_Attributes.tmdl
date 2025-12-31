@@ -1,0 +1,234 @@
+table Team_Attributes
+	lineageTag: e6945206-f17b-478b-8496-00683518a396
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: b7c0d493-8c34-4562-8382-ed6258a62f54
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_fifa_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: df580712-c6eb-4366-9bb2-2dbc40fe9f2b
+		summarizeBy: sum
+		sourceColumn: team_fifa_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8cc5f805-f174-4ae4-9891-f38a7eafda9a
+		summarizeBy: none
+		sourceColumn: team_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ccb609ad-1f3d-4dec-a7aa-7ff0c887d285
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variación
+			isDefault
+			relationship: 62067379-e295-4f7c-9cf8-85630e6dc861
+			defaultHierarchy: LocalDateTable_98445bed-dc11-424b-b853-98a9db1ed899.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlaySpeed
+		dataType: int64
+		formatString: 0
+		lineageTag: 3203e13b-50a7-4d02-ad8c-ddd366dfa43a
+		summarizeBy: sum
+		sourceColumn: buildUpPlaySpeed
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlaySpeedClass
+		dataType: string
+		lineageTag: 2a633308-3294-4bd6-b062-cc95d23fae9c
+		summarizeBy: none
+		sourceColumn: buildUpPlaySpeedClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlayDribbling
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e0f78d3-09bd-4a22-8bdc-32d197e370e8
+		summarizeBy: sum
+		sourceColumn: buildUpPlayDribbling
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlayDribblingClass
+		dataType: string
+		lineageTag: 369d92a1-c6b7-4ef0-8506-6ccacef6e9a6
+		summarizeBy: none
+		sourceColumn: buildUpPlayDribblingClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlayPassing
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c8cb560-145a-42e0-93a5-37ea3c6f82b0
+		summarizeBy: sum
+		sourceColumn: buildUpPlayPassing
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlayPassingClass
+		dataType: string
+		lineageTag: b85bf8dd-a051-4a4e-a567-38f3b52e0fd9
+		summarizeBy: none
+		sourceColumn: buildUpPlayPassingClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column buildUpPlayPositioningClass
+		dataType: string
+		lineageTag: 7a23b694-8ea5-47d1-8a31-610420f217fa
+		summarizeBy: none
+		sourceColumn: buildUpPlayPositioningClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationPassing
+		dataType: int64
+		formatString: 0
+		lineageTag: d2407517-df5e-411d-bd22-2e8c0fafa607
+		summarizeBy: sum
+		sourceColumn: chanceCreationPassing
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationPassingClass
+		dataType: string
+		lineageTag: d26dbb31-d986-4968-b182-8783472118b2
+		summarizeBy: none
+		sourceColumn: chanceCreationPassingClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationCrossing
+		dataType: int64
+		formatString: 0
+		lineageTag: 22d81bb5-674e-441b-942a-b7f9f0cf15f3
+		summarizeBy: sum
+		sourceColumn: chanceCreationCrossing
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationCrossingClass
+		dataType: string
+		lineageTag: 82753cd4-a4ca-4f2d-ad7c-2cb9ad51618b
+		summarizeBy: none
+		sourceColumn: chanceCreationCrossingClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationShooting
+		dataType: int64
+		formatString: 0
+		lineageTag: 02f41969-c8f3-40f2-9d00-57280cade34c
+		summarizeBy: sum
+		sourceColumn: chanceCreationShooting
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationShootingClass
+		dataType: string
+		lineageTag: b652eb42-e261-4e7c-a8d3-261a6770a095
+		summarizeBy: none
+		sourceColumn: chanceCreationShootingClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column chanceCreationPositioningClass
+		dataType: string
+		lineageTag: 852f11b5-86df-4730-bee7-8b2c3273415d
+		summarizeBy: none
+		sourceColumn: chanceCreationPositioningClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column defencePressure
+		dataType: int64
+		formatString: 0
+		lineageTag: a30bb0de-3265-4365-a2bc-895af2489bfc
+		summarizeBy: sum
+		sourceColumn: defencePressure
+
+		annotation SummarizationSetBy = Automatic
+
+	column defencePressureClass
+		dataType: string
+		lineageTag: 8b4e8f7b-0aa0-40c5-b6e8-26409ab82c8b
+		summarizeBy: none
+		sourceColumn: defencePressureClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column defenceAggression
+		dataType: int64
+		formatString: 0
+		lineageTag: 680b1659-7bba-4c77-a25e-82c5d36839a8
+		summarizeBy: sum
+		sourceColumn: defenceAggression
+
+		annotation SummarizationSetBy = Automatic
+
+	column defenceAggressionClass
+		dataType: string
+		lineageTag: ca70af9c-34bb-43cf-b793-a0ea64a28811
+		summarizeBy: none
+		sourceColumn: defenceAggressionClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column defenceTeamWidth
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f70b1c1-1563-4356-8144-f7c7830f2414
+		summarizeBy: sum
+		sourceColumn: defenceTeamWidth
+
+		annotation SummarizationSetBy = Automatic
+
+	column defenceTeamWidthClass
+		dataType: string
+		lineageTag: d12c0d67-233d-4296-81ac-9849a06d9ba8
+		summarizeBy: none
+		sourceColumn: defenceTeamWidthClass
+
+		annotation SummarizationSetBy = Automatic
+
+	column defenceDefenderLineClass
+		dataType: string
+		lineageTag: 46fa3ecf-665d-4f75-b1d7-aed1173a5bfb
+		summarizeBy: none
+		sourceColumn: defenceDefenderLineClass
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Team_Attributes = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Team_Attributes_Sheet = Origen{[Item="Team_Attributes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Team_Attributes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"team_fifa_api_id", Int64.Type}, {"team_api_id", Int64.Type}, {"date", type datetime}, {"buildUpPlaySpeed", Int64.Type}, {"buildUpPlaySpeedClass", type text}, {"buildUpPlayDribbling", Int64.Type}, {"buildUpPlayDribblingClass", type text}, {"buildUpPlayPassing", Int64.Type}, {"buildUpPlayPassingClass", type text}, {"buildUpPlayPositioningClass", type text}, {"chanceCreationPassing", Int64.Type}, {"chanceCreationPassingClass", type text}, {"chanceCreationCrossing", Int64.Type}, {"chanceCreationCrossingClass", type text}, {"chanceCreationShooting", Int64.Type}, {"chanceCreationShootingClass", type text}, {"chanceCreationPositioningClass", type text}, {"defencePressure", Int64.Type}, {"defencePressureClass", type text}, {"defenceAggression", Int64.Type}, {"defenceAggressionClass", type text}, {"defenceTeamWidth", Int64.Type}, {"defenceTeamWidthClass", type text}, {"defenceDefenderLineClass", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

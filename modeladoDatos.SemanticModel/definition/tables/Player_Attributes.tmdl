@@ -1,0 +1,398 @@
+table Player_Attributes
+	lineageTag: 598c472c-ddd2-46ba-95e9-71894263712d
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: ef33dfe3-4d28-4c3d-9e6c-4cc94e34e5b2
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_fifa_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c6edf44c-00a3-459e-9e0c-fc122138766a
+		summarizeBy: sum
+		sourceColumn: player_fifa_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 089c8c0d-31ef-42c1-80a8-d746d672c83f
+		summarizeBy: none
+		sourceColumn: player_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 089acaee-ec65-4382-9ae2-52b6f19533ab
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variación
+			isDefault
+			relationship: 1f05cb46-5329-497d-ad75-0cf432aa1737
+			defaultHierarchy: LocalDateTable_5125694f-4a9d-4417-9a22-0b43c49403e8.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_rating
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b926c1b-1d16-4f0a-bb3a-f488aafad6a8
+		summarizeBy: sum
+		sourceColumn: overall_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column potential
+		dataType: int64
+		formatString: 0
+		lineageTag: ddf80668-c5b8-44ec-b753-6afa3567fd7d
+		summarizeBy: sum
+		sourceColumn: potential
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferred_foot
+		dataType: string
+		lineageTag: da0ccb53-5b17-472a-b01f-c4ff8fdf9789
+		summarizeBy: none
+		sourceColumn: preferred_foot
+
+		annotation SummarizationSetBy = Automatic
+
+	column attacking_work_rate
+		dataType: string
+		lineageTag: d53af60a-4130-4077-b533-62765b5feeb9
+		summarizeBy: none
+		sourceColumn: attacking_work_rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column defensive_work_rate
+		dataType: string
+		lineageTag: d2c5e820-20a5-45bb-ab24-cd6e43d35c1b
+		summarizeBy: none
+		sourceColumn: defensive_work_rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column crossing
+		dataType: int64
+		formatString: 0
+		lineageTag: 17cfaf8c-f588-4839-9610-8991eae79f02
+		summarizeBy: sum
+		sourceColumn: crossing
+
+		annotation SummarizationSetBy = Automatic
+
+	column finishing
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dbca9e1-5e75-4ea3-b623-b963a8624cda
+		summarizeBy: sum
+		sourceColumn: finishing
+
+		annotation SummarizationSetBy = Automatic
+
+	column heading_accuracy
+		dataType: int64
+		formatString: 0
+		lineageTag: e57762bb-727d-4b60-bb73-d847ba9067ca
+		summarizeBy: sum
+		sourceColumn: heading_accuracy
+
+		annotation SummarizationSetBy = Automatic
+
+	column short_passing
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b27fa4a-fb09-4fe6-9836-670d2fbb725f
+		summarizeBy: sum
+		sourceColumn: short_passing
+
+		annotation SummarizationSetBy = Automatic
+
+	column volleys
+		dataType: int64
+		formatString: 0
+		lineageTag: dd82e310-d273-4ee1-b177-49a6a96bacf5
+		summarizeBy: sum
+		sourceColumn: volleys
+
+		annotation SummarizationSetBy = Automatic
+
+	column dribbling
+		dataType: int64
+		formatString: 0
+		lineageTag: ef551f6a-b320-4ce1-bfa6-58f6e2d8b74a
+		summarizeBy: sum
+		sourceColumn: dribbling
+
+		annotation SummarizationSetBy = Automatic
+
+	column curve
+		dataType: int64
+		formatString: 0
+		lineageTag: 63d7e785-ffb0-4227-be28-cf9bc5a656e9
+		summarizeBy: sum
+		sourceColumn: curve
+
+		annotation SummarizationSetBy = Automatic
+
+	column free_kick_accuracy
+		dataType: int64
+		formatString: 0
+		lineageTag: 0857a947-1eba-46ed-bd40-05b86e61e111
+		summarizeBy: sum
+		sourceColumn: free_kick_accuracy
+
+		annotation SummarizationSetBy = Automatic
+
+	column long_passing
+		dataType: int64
+		formatString: 0
+		lineageTag: 040ffcc4-a34b-464e-ae33-a53449b6b95b
+		summarizeBy: sum
+		sourceColumn: long_passing
+
+		annotation SummarizationSetBy = Automatic
+
+	column ball_control
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ecafe80-743b-4299-8004-e9c61cf75c8c
+		summarizeBy: sum
+		sourceColumn: ball_control
+
+		annotation SummarizationSetBy = Automatic
+
+	column acceleration
+		dataType: int64
+		formatString: 0
+		lineageTag: 339a7a61-4b48-42bb-9107-990f378efbe1
+		summarizeBy: sum
+		sourceColumn: acceleration
+
+		annotation SummarizationSetBy = Automatic
+
+	column sprint_speed
+		dataType: int64
+		formatString: 0
+		lineageTag: ea41f229-2c55-4800-97f4-281f07aa2c0a
+		summarizeBy: sum
+		sourceColumn: sprint_speed
+
+		annotation SummarizationSetBy = Automatic
+
+	column agility
+		dataType: int64
+		formatString: 0
+		lineageTag: 18352168-fb52-49b5-b2c3-3f945deee379
+		summarizeBy: sum
+		sourceColumn: agility
+
+		annotation SummarizationSetBy = Automatic
+
+	column reactions
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b38a3a3-5d91-4e02-b7b4-e5397b1185e2
+		summarizeBy: sum
+		sourceColumn: reactions
+
+		annotation SummarizationSetBy = Automatic
+
+	column balance
+		dataType: int64
+		formatString: 0
+		lineageTag: b1e4e13a-9ce1-4fdd-9667-b6d44e5dccfe
+		summarizeBy: sum
+		sourceColumn: balance
+
+		annotation SummarizationSetBy = Automatic
+
+	column shot_power
+		dataType: int64
+		formatString: 0
+		lineageTag: 493e1899-6b7c-43dd-965d-98a3617de6c5
+		summarizeBy: sum
+		sourceColumn: shot_power
+
+		annotation SummarizationSetBy = Automatic
+
+	column jumping
+		dataType: int64
+		formatString: 0
+		lineageTag: ad43e500-fde0-4535-b959-31756ccc0866
+		summarizeBy: sum
+		sourceColumn: jumping
+
+		annotation SummarizationSetBy = Automatic
+
+	column stamina
+		dataType: int64
+		formatString: 0
+		lineageTag: 63b8d731-9f48-419e-ad0e-be0f1f7b6b71
+		summarizeBy: sum
+		sourceColumn: stamina
+
+		annotation SummarizationSetBy = Automatic
+
+	column strength
+		dataType: int64
+		formatString: 0
+		lineageTag: 636b8a20-e488-4279-b7aa-51d78728511e
+		summarizeBy: sum
+		sourceColumn: strength
+
+		annotation SummarizationSetBy = Automatic
+
+	column long_shots
+		dataType: int64
+		formatString: 0
+		lineageTag: abfedefd-1587-434b-9504-ced935c3a4d8
+		summarizeBy: sum
+		sourceColumn: long_shots
+
+		annotation SummarizationSetBy = Automatic
+
+	column aggression
+		dataType: int64
+		formatString: 0
+		lineageTag: d1a825e0-de39-4696-b8a9-eab9de896b90
+		summarizeBy: sum
+		sourceColumn: aggression
+
+		annotation SummarizationSetBy = Automatic
+
+	column interceptions
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c43a489-31c0-4e92-9eed-463168aefffd
+		summarizeBy: sum
+		sourceColumn: interceptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column positioning
+		dataType: int64
+		formatString: 0
+		lineageTag: b55fcfb3-6960-44ee-b8b1-0b9b1c12b29c
+		summarizeBy: sum
+		sourceColumn: positioning
+
+		annotation SummarizationSetBy = Automatic
+
+	column vision
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a5a224e-7b0d-448f-aee0-e102cbe32181
+		summarizeBy: sum
+		sourceColumn: vision
+
+		annotation SummarizationSetBy = Automatic
+
+	column penalties
+		dataType: int64
+		formatString: 0
+		lineageTag: b58a1ec9-2e94-454a-a7bb-a07e7792a649
+		summarizeBy: sum
+		sourceColumn: penalties
+
+		annotation SummarizationSetBy = Automatic
+
+	column marking
+		dataType: int64
+		formatString: 0
+		lineageTag: 24190515-4083-49d0-94eb-ccd3720351dd
+		summarizeBy: sum
+		sourceColumn: marking
+
+		annotation SummarizationSetBy = Automatic
+
+	column standing_tackle
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f757c9c-9f74-4d83-b318-8d0e64107e88
+		summarizeBy: sum
+		sourceColumn: standing_tackle
+
+		annotation SummarizationSetBy = Automatic
+
+	column sliding_tackle
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e01381c-9d3c-4a6e-b984-bbb6a53473af
+		summarizeBy: sum
+		sourceColumn: sliding_tackle
+
+		annotation SummarizationSetBy = Automatic
+
+	column gk_diving
+		dataType: int64
+		formatString: 0
+		lineageTag: 09b55b26-41f9-4e05-abb0-784e672023fb
+		summarizeBy: sum
+		sourceColumn: gk_diving
+
+		annotation SummarizationSetBy = Automatic
+
+	column gk_handling
+		dataType: int64
+		formatString: 0
+		lineageTag: 89f7fafa-f3ea-4e55-bf70-ae5ea0f00490
+		summarizeBy: sum
+		sourceColumn: gk_handling
+
+		annotation SummarizationSetBy = Automatic
+
+	column gk_kicking
+		dataType: int64
+		formatString: 0
+		lineageTag: 167a9aa6-3f03-46a7-8f77-85300fccf80b
+		summarizeBy: sum
+		sourceColumn: gk_kicking
+
+		annotation SummarizationSetBy = Automatic
+
+	column gk_positioning
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a834164-2bb5-41fc-b43f-9899860409fd
+		summarizeBy: sum
+		sourceColumn: gk_positioning
+
+		annotation SummarizationSetBy = Automatic
+
+	column gk_reflexes
+		dataType: int64
+		formatString: 0
+		lineageTag: 92255c04-065a-4260-a606-424d8ac14959
+		summarizeBy: sum
+		sourceColumn: gk_reflexes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Player_Attributes = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Player_Attributes_Sheet = Origen{[Item="Player_Attributes",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Player_Attributes_Sheet, [PromoteAllScalars=true]),
+				    #"Encabezados 1a fila" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"player_fifa_api_id", Int64.Type}, {"player_api_id", Int64.Type}, {"date", type datetime}, {"overall_rating", Int64.Type}, {"potential", Int64.Type}, {"preferred_foot", type text}, {"attacking_work_rate", type text}, {"defensive_work_rate", type text}, {"crossing", Int64.Type}, {"finishing", Int64.Type}, {"heading_accuracy", Int64.Type}, {"short_passing", Int64.Type}, {"volleys", Int64.Type}, {"dribbling", Int64.Type}, {"curve", Int64.Type}, {"free_kick_accuracy", Int64.Type}, {"long_passing", Int64.Type}, {"ball_control", Int64.Type}, {"acceleration", Int64.Type}, {"sprint_speed", Int64.Type}, {"agility", Int64.Type}, {"reactions", Int64.Type}, {"balance", Int64.Type}, {"shot_power", Int64.Type}, {"jumping", Int64.Type}, {"stamina", Int64.Type}, {"strength", Int64.Type}, {"long_shots", Int64.Type}, {"aggression", Int64.Type}, {"interceptions", Int64.Type}, {"positioning", Int64.Type}, {"vision", Int64.Type}, {"penalties", Int64.Type}, {"marking", Int64.Type}, {"standing_tackle", Int64.Type}, {"sliding_tackle", Int64.Type}, {"gk_diving", Int64.Type}, {"gk_handling", Int64.Type}, {"gk_kicking", Int64.Type}, {"gk_positioning", Int64.Type}, {"gk_reflexes", Int64.Type}})
+				in
+				    #"Encabezados 1a fila"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

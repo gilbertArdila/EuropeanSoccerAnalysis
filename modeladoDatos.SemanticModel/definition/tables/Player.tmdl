@@ -1,0 +1,84 @@
+table Player
+	lineageTag: 9bb67f90-7233-47fa-b62d-894366a8619d
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d3f5c66-cf26-46f4-8f4f-1cdbcf8175ef
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c7a83305-2eab-42fc-92a7-f06a6193d49d
+		summarizeBy: none
+		sourceColumn: player_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_name
+		dataType: string
+		lineageTag: 1f3b0c60-d6f9-453c-bac1-61c1ed119414
+		summarizeBy: none
+		sourceColumn: player_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_fifa_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 67667fd0-58e7-4a6b-8987-c1cd15bc1ccd
+		summarizeBy: sum
+		sourceColumn: player_fifa_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column birthday
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 45f32b9e-8f20-4e72-83d0-3f1757eab1ff
+		summarizeBy: none
+		sourceColumn: birthday
+
+		variation Variación
+			isDefault
+			relationship: da16ccee-08b2-4b61-8212-565d40f605ea
+			defaultHierarchy: LocalDateTable_359ec3fb-cc1a-4800-ba4e-a028caf26534.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column height
+		dataType: double
+		lineageTag: c380db24-ba78-4ed3-a7a9-2a4a53f347bc
+		summarizeBy: sum
+		sourceColumn: height
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weight
+		dataType: int64
+		formatString: 0
+		lineageTag: 653476c8-5658-41fe-b9f5-8c53c60c2563
+		summarizeBy: sum
+		sourceColumn: weight
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Player = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Player_Sheet = Origen{[Item="Player",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Player_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"player_api_id", Int64.Type}, {"player_name", type text}, {"player_fifa_api_id", Int64.Type}, {"birthday", type datetime}, {"height", type number}, {"weight", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

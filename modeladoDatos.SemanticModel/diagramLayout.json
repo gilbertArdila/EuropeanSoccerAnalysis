@@ -1,0 +1,139 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 150.79864675456173
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Country",
+          "nodeLineageTag": "1c2f47ae-e668-4d2b-a778-21c241470a56",
+          "size": {
+            "height": 146.32133091410563,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 291.44622221085859
+          },
+          "nodeIndex": "League",
+          "nodeLineageTag": "007b7576-ef12-4833-bfed-da70a39d3b58",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 343.59599609201672,
+            "y": 0
+          },
+          "nodeIndex": "Match",
+          "nodeLineageTag": "2e2c57da-29da-4612-885a-cc8d964872ae",
+          "size": {
+            "height": 464.89197822695064,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 867.924456297047,
+            "y": 0
+          },
+          "nodeIndex": "Player",
+          "nodeLineageTag": "9bb67f90-7233-47fa-b62d-894366a8619d",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1335.1377654381038,
+            "y": 0
+          },
+          "nodeIndex": "Player_Attributes",
+          "nodeLineageTag": "598c472c-ddd2-46ba-95e9-71894263712d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 797.38305001469371,
+            "y": 492
+          },
+          "nodeIndex": "Team",
+          "nodeLineageTag": "b69f4976-51d3-4549-b0c7-9871b314ff21",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1277.2656671802397,
+            "y": 431.25594305510174
+          },
+          "nodeIndex": "Team_Attributes",
+          "nodeLineageTag": "e6945206-f17b-478b-8496-00683518a396",
+          "size": {
+            "height": 300,
+            "width": 212.8600027914166
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 825.683203542606,
+            "y": 295.24463586803711
+          },
+          "nodeIndex": "PlayerAppearance",
+          "nodeLineageTag": "e0f8ab07-baba-47e7-bc49-e12c5d46b4f5",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 67.461970328080781,
+            "y": 509.44260599987962
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9de17bd7-3a27-409c-8ba0-3757e015975c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 10
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 70.955543900968863,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

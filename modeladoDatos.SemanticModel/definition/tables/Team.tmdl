@@ -1,0 +1,59 @@
+table Team
+	lineageTag: b69f4976-51d3-4549-b0c7-9871b314ff21
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e4fbcc2-f3c3-4ae0-ac0a-aa85e7d97e86
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ab62d939-1ada-47c0-861d-dd3b1a288c3c
+		summarizeBy: none
+		sourceColumn: team_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_fifa_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: feccacd5-00da-4fd9-a67a-84aa7d1fe3ba
+		summarizeBy: sum
+		sourceColumn: team_fifa_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_long_name
+		dataType: string
+		lineageTag: 5d5a8647-45eb-413e-aaa0-1afa2de19ff2
+		summarizeBy: none
+		sourceColumn: team_long_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_short_name
+		dataType: string
+		lineageTag: 537c14c8-ba8a-473e-baf4-f614def1bdbd
+		summarizeBy: none
+		sourceColumn: team_short_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Team = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Team_Sheet = Origen{[Item="Team",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Team_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"team_api_id", Int64.Type}, {"team_fifa_api_id", Int64.Type}, {"team_long_name", type text}, {"team_short_name", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

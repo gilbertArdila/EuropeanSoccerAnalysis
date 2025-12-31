@@ -1,0 +1,31 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-CO
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Country","League","Player","Match","Player_Attributes","Team","Team_Attributes","PlayerAppearance"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Country
+ref table League
+ref table Player
+ref table DateTableTemplate_7978b034-0356-465c-add7-25f500a6c5fc
+ref table LocalDateTable_359ec3fb-cc1a-4800-ba4e-a028caf26534
+ref table Match
+ref table Player_Attributes
+ref table Team
+ref table Team_Attributes
+ref table LocalDateTable_98445bed-dc11-424b-b853-98a9db1ed899
+ref table LocalDateTable_5125694f-4a9d-4417-9a22-0b43c49403e8
+ref table PlayerAppearance
+ref table Calendario
+ref table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
+
+ref cultureInfo es-ES
+

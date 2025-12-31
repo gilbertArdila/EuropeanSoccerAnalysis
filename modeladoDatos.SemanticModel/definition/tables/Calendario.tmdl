@@ -1,0 +1,94 @@
+table Calendario
+	lineageTag: 9de17bd7-3a27-409c-8ba0-3757e015975c
+
+	column Date
+		formatString: General Date
+		lineageTag: 6ec83f35-d5db-4101-b7ab-fb5445f7d65b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variación
+			isDefault
+			relationship: d120a447-47e4-4419-b38d-f85500705a48
+			defaultHierarchy: LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: f636bab1-30f3-4707-bde5-78b71515192d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		lineageTag: bad95e33-9966-4c95-afd2-2c33130e2009
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesN
+		formatString: 0
+		lineageTag: 82b48517-9dbb-4f35-93f3-37f003a4cad5
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MesN]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		formatString: 0
+		lineageTag: cb67e4cd-f26c-4dcb-b5d2-b09b90a60809
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Dia]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Temporada
+		lineageTag: 9f5ec82a-7934-40b6-b3d7-2ed4d3de1498
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Temporada]
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Temporada Jerarquía'
+		lineageTag: 060b4a5e-9822-46dc-aaad-1d768a4e325b
+
+		level Temporada
+			lineageTag: 27c0d24b-aee1-49fc-84d3-616d38c49d18
+			column: Temporada
+
+		level Mes
+			lineageTag: 03d83f1d-ecba-4c1d-bb9b-a0d5d369fb41
+			column: Mes
+
+		level Dia
+			lineageTag: 8012b7d0-971f-4967-9f28-ddd36b1ce50c
+			column: Dia
+
+	partition Calendario = calculated
+		mode: import
+		source =
+				ADDCOLUMNS(
+				    CALENDAR(DATE(2008,7,1), DATE(2018,6,30)),
+				    "Año", YEAR([Date]),
+				    "Mes", FORMAT([Date], "MMMM"),
+				    "MesN", MONTH([Date]),
+				    "Dia", DAY([Date]),
+				    "Temporada",
+				          IF(
+				              MONTH([Date])>=7,
+				              FORMAT(YEAR([Date]), "0000") & "/" & FORMAT(YEAR([Date]) + 1,"0000"),
+				              FORMAT(YEAR([Date]) -1, "0000") & "/" & FORMAT(YEAR([Date]),"0000")
+				          )
+				)
+
+	annotation PBI_Id = 74260b0fd5b04a1495ebba6a2ab39610
+

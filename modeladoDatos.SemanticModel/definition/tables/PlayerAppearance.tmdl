@@ -1,0 +1,60 @@
+table PlayerAppearance
+	lineageTag: e0f8ab07-baba-47e7-bc49-e12c5d46b4f5
+
+	column match_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: dce5c3a6-b817-474d-831f-1a52f24173c3
+		summarizeBy: none
+		sourceColumn: match_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column player_api_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b5a15d92-b26b-4f5b-9a3e-51d2e133e10f
+		summarizeBy: none
+		sourceColumn: player_api_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_side
+		dataType: string
+		lineageTag: e1037fe8-25da-414a-90d3-d900d85c9ac5
+		summarizeBy: none
+		sourceColumn: team_side
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: string
+		lineageTag: 9bf4cad9-db07-43de-9bd9-6c6fc69b8208
+		summarizeBy: none
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PlayerAppearance = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\G_Ardila\OneDrive\Desktop\PowerBI\Proyecto5\European_Soccer_Dataset.xlsx"), null, true),
+				    Match_Sheet = Origen{[Item="Match",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Match_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"id", Int64.Type}, {"country_id", Int64.Type}, {"league_id", Int64.Type}, {"season", type text}, {"stage", Int64.Type}, {"date", type datetime}, {"match_api_id", Int64.Type}, {"home_team_api_id", Int64.Type}, {"away_team_api_id", Int64.Type}, {"home_team_goal", Int64.Type}, {"away_team_goal", Int64.Type}, {"home_player_X1", Int64.Type}, {"home_player_X2", Int64.Type}, {"home_player_X3", Int64.Type}, {"home_player_X4", Int64.Type}, {"home_player_X5", Int64.Type}, {"home_player_X6", Int64.Type}, {"home_player_X7", Int64.Type}, {"home_player_X8", Int64.Type}, {"home_player_X9", Int64.Type}, {"home_player_X10", Int64.Type}, {"home_player_X11", Int64.Type}, {"away_player_X1", Int64.Type}, {"away_player_X2", Int64.Type}, {"away_player_X3", Int64.Type}, {"away_player_X4", Int64.Type}, {"away_player_X5", Int64.Type}, {"away_player_X6", Int64.Type}, {"away_player_X7", Int64.Type}, {"away_player_X8", Int64.Type}, {"away_player_X9", Int64.Type}, {"away_player_X10", Int64.Type}, {"away_player_X11", Int64.Type}, {"home_player_Y1", Int64.Type}, {"home_player_Y2", Int64.Type}, {"home_player_Y3", Int64.Type}, {"home_player_Y4", Int64.Type}, {"home_player_Y5", Int64.Type}, {"home_player_Y6", Int64.Type}, {"home_player_Y7", Int64.Type}, {"home_player_Y8", Int64.Type}, {"home_player_Y9", Int64.Type}, {"home_player_Y10", Int64.Type}, {"home_player_Y11", Int64.Type}, {"away_player_Y1", Int64.Type}, {"away_player_Y2", Int64.Type}, {"away_player_Y3", Int64.Type}, {"away_player_Y4", Int64.Type}, {"away_player_Y5", Int64.Type}, {"away_player_Y6", Int64.Type}, {"away_player_Y7", Int64.Type}, {"away_player_Y8", Int64.Type}, {"away_player_Y9", Int64.Type}, {"away_player_Y10", Int64.Type}, {"away_player_Y11", Int64.Type}, {"home_player_1", Int64.Type}, {"home_player_2", Int64.Type}, {"home_player_3", Int64.Type}, {"home_player_4", Int64.Type}, {"home_player_5", Int64.Type}, {"home_player_6", Int64.Type}, {"home_player_7", Int64.Type}, {"home_player_8", Int64.Type}, {"home_player_9", Int64.Type}, {"home_player_10", Int64.Type}, {"home_player_11", Int64.Type}, {"away_player_1", Int64.Type}, {"away_player_2", Int64.Type}, {"away_player_3", Int64.Type}, {"away_player_4", Int64.Type}, {"away_player_5", Int64.Type}, {"away_player_6", Int64.Type}, {"away_player_7", Int64.Type}, {"away_player_8", Int64.Type}, {"away_player_9", Int64.Type}, {"away_player_10", Int64.Type}, {"away_player_11", Int64.Type}, {"goal", type any}, {"shoton", type any}, {"shotoff", type any}, {"foulcommit", type any}, {"card", type any}, {"cross", type any}, {"corner", type any}, {"possession", type any}, {"B365H", type number}, {"B365D", type number}, {"B365A", type number}, {"BWH", type number}, {"BWD", type number}, {"BWA", type number}, {"IWH", type number}, {"IWD", type number}, {"IWA", type number}, {"LBH", type number}, {"LBD", type number}, {"LBA", type number}, {"PSH", type any}, {"PSD", type any}, {"PSA", type any}, {"WHH", type number}, {"WHD", type number}, {"WHA", type number}, {"SJH", type number}, {"SJD", type number}, {"SJA", type number}, {"VCH", type number}, {"VCD", type number}, {"VCA", type number}, {"GBH", type number}, {"GBD", type number}, {"GBA", type number}, {"BSH", type number}, {"BSD", type number}, {"BSA", type number}}),
+				    #"Otras columnas quitadas" = Table.SelectColumns(#"Tipo cambiado",{"match_api_id", "home_player_1", "home_player_2", "home_player_3", "home_player_4", "home_player_5", "home_player_6", "home_player_7", "home_player_8", "home_player_9", "home_player_10", "home_player_11", "away_player_1", "away_player_2", "away_player_3", "away_player_4", "away_player_5", "away_player_6", "away_player_7", "away_player_8", "away_player_9", "away_player_10", "away_player_11"}),
+				    #"Columna de anulación de dinamización" = Table.UnpivotOtherColumns(#"Otras columnas quitadas", {"match_api_id"}, "Atributo", "Valor"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna de anulación de dinamización",{{"Valor", "player_api_id"}, {"Atributo", "position_raw"}}),
+				    #"Columna condicional agregada" = Table.AddColumn(#"Columnas con nombre cambiado", "team_side", each if Text.Contains([position_raw], "home") then "home" else "away"),
+				    #"Columna duplicada" = Table.DuplicateColumn(#"Columna condicional agregada", "position_raw", "position_raw - Copia"),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Columna duplicada",{"position_raw - Copia"}),
+				    #"Texto insertado después del delimitador" = Table.AddColumn(#"Columnas quitadas", "position", each Text.AfterDelimiter([position_raw], "_", 1), type text),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Texto insertado después del delimitador",{"position_raw"})
+				in
+				    #"Columnas quitadas1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
