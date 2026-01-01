@@ -1,6 +1,10 @@
 table Calendario
 	lineageTag: 9de17bd7-3a27-409c-8ba0-3757e015975c
 
+	measure Total_goles_partido = SUM(Match[home_team_goal]) + SUM(Match[away_team_goal])
+		formatString: 0
+		lineageTag: e06c3ab9-a969-410f-a48c-0eeb0730f70e
+
 	column Date
 		formatString: General Date
 		lineageTag: 6ec83f35-d5db-4101-b7ab-fb5445f7d65b

@@ -50,6 +50,22 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "fondo_lienzo43756741257982135.png",
+          "path": "fondo_lienzo43756741257982135.png",
+          "type": "Image"
+        },
+        {
+          "name": "fondo_menu12822076134074079.png",
+          "path": "fondo_menu12822076134074079.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {
