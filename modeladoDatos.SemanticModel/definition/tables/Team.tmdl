@@ -44,6 +44,12 @@ table Team
 
 		annotation SummarizationSetBy = Automatic
 
+	column Unique_team_long_name = CONCATENATE( Team[team_long_name], CONCATENATE( "-", Team[team_api_id]))
+		lineageTag: d01b6532-9dc1-4d2f-945e-010996f4ba96
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Team = m
 		mode: import
 		source =

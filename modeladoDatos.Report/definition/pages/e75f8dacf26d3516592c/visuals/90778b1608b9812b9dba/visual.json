@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "90778b1608b9812b9dba",
+  "position": {
+    "x": 228.44444444444446,
+    "y": 23.111111111111114,
+    "z": 6000,
+    "height": 180,
+    "width": 180,
+    "tabOrder": 8000
+  },
+  "visualGroup": {
+    "displayName": "Posibilidad empate",
+    "groupMode": "ScaleMode"
+  }
+}

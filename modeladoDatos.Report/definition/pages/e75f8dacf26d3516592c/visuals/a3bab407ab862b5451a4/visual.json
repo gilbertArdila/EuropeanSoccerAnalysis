@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "a3bab407ab862b5451a4",
+  "position": {
+    "x": 408.65694551036069,
+    "y": 21.61166538756715,
+    "z": 5000,
+    "height": 179.76976208749039,
+    "width": 179.76976208749039
+  },
+  "visualGroup": {
+    "displayName": "Posibilidad victoria local",
+    "groupMode": "ScaleMode"
+  }
+}

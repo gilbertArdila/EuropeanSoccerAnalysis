@@ -402,6 +402,16 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Liga": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "NameType": "Name"
@@ -15001,9 +15011,200 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "team.unique_team_long_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Team",
+			          "ConceptualProperty": "Unique_team_long_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unique team long name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Unique_team_long_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "team long": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "long name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "unique team long nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "unique team long title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "unique team long label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "unique team long tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "long nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "long title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "long label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "long tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Team": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "team_attribute_date_jerarquía_de_fecha_has_team_attribute_date_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Team_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team_attribute.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "team_attribute.date.jerarquía_de_fecha"
+			          }
+			        },
+			        "team_attribute.date.año": {
+			          "Target": {
+			            "Entity": "team_attribute.date.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team_attribute.date.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "team_attribute.date.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "team_attribute_date_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Team_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team_attribute.date": {
+			          "Target": {
+			            "Entity": "team_attribute.date"
+			          }
+			        },
+			        "team_attribute.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "team_attribute.date.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team_attribute.date"
+			            },
+			            "Object": {
+			              "Role": "team_attribute.date.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
 			    "player_attribute_date_me_has_player_attribute_date_día": {
 			      "Binding": {
 			        "ConceptualEntity": "Player_Attributes"
@@ -15330,7 +15531,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años"
+			          "ID": "jerarquía_de_fechas_have_años1"
 			        }
 			      ]
 			    },
@@ -15363,7 +15564,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas"
+			          "ID": "dates_have_jerarquía_de_fechas1"
 			        }
 			      ]
 			    },
@@ -15693,7 +15894,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años1"
+			          "ID": "jerarquía_de_fechas_have_años2"
 			        }
 			      ]
 			    },
@@ -16160,6 +16361,39 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "teams_have_matches"
+			        }
+			      ]
+			    },
+			    "team_has_unique_team_long_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Team"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team": {
+			          "Target": {
+			            "Entity": "team"
+			          }
+			        },
+			        "team.unique_team_long_name": {
+			          "Target": {
+			            "Entity": "team.unique_team_long_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team"
+			            },
+			            "Object": {
+			              "Role": "team.unique_team_long_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "teams_have_unique_team_long_names"
 			        }
 			      ]
 			    },
@@ -23524,72 +23758,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.75,
 			          "ID": "players_play"
-			        }
-			      ]
-			    },
-			    "team_attribute_date_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "Team_Attributes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "team_attribute.date": {
-			          "Target": {
-			            "Entity": "team_attribute.date"
-			          }
-			        },
-			        "team_attribute.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "team_attribute.date.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "team_attribute.date"
-			            },
-			            "Object": {
-			              "Role": "team_attribute.date.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas1"
-			        }
-			      ]
-			    },
-			    "team_attribute_date_jerarquía_de_fecha_has_team_attribute_date_año": {
-			      "Binding": {
-			        "ConceptualEntity": "Team_Attributes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "team_attribute.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "team_attribute.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "team_attribute.date.año": {
-			          "Target": {
-			            "Entity": "team_attribute.date.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "team_attribute.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "team_attribute.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años2"
 			        }
 			      ]
 			    },

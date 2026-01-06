@@ -1,6 +1,38 @@
 table Match
 	lineageTag: 2e2c57da-29da-4612-885a-cc8d964872ae
 
+	measure Prob_victoria_local = DIVIDE(1, AVERAGE(Match[B365H]) )
+		lineageTag: b66fb3ad-5176-4a3d-a66b-71a03708a95c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Prob_victoria_visitante = DIVIDE(1, AVERAGE(Match[B365A]))
+		lineageTag: 13c5834c-436c-4df2-8271-7a5d4ce628de
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Prob_empate = DIVIDE(1, AVERAGE(Match[B365D]))
+		lineageTag: 18993ed5-2cac-47c7-aeba-89aadabc79c9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Total_prov = [Prob_empate] +[Prob_victoria_local] +[Prob_victoria_visitante]
+		lineageTag: 1cdc3855-4287-4d01-8d98-4176f338f9ea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure prob_vit_loca_nor = DIVIDE([Prob_victoria_local], [Total_prov])
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 97a1ee80-196e-40d5-8ee8-38240587245c
+
+	measure prob_vit_vis_nor = DIVIDE([Prob_victoria_visitante], [Total_prov])
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 8dbde831-c102-41ba-8b4c-fd8c8b17dc84
+
+	measure prob_empate_nor = DIVIDE([Prob_empate], [Total_prov])
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: f77cdc4c-0117-4c57-b590-14b68f8cbcf6
+
 	column id
 		dataType: int64
 		formatString: 0

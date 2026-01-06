@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "d23e89f090de20590779",
+  "position": {
+    "x": 588.42670759785108,
+    "y": 24.558710667689944,
+    "z": 4500,
+    "height": 179.76976208749039,
+    "width": 179.76976208749039
+  },
+  "visualGroup": {
+    "displayName": "Posibilidad victoria visitante",
+    "groupMode": "ScaleMode"
+  }
+}
