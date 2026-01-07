@@ -15136,6 +15136,374 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "match.prob_victoria_local": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "Prob_victoria_local"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob victoria local": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prob_victoria_local": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "match.prob_victoria_visitante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "Prob_victoria_visitante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob victoria visitante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prob_victoria_visitante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "match.prob_empate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "Prob_empate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob empate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prob_empate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "match.total_prov": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "Total_prov"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total prov": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_prov": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall prov": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "match.prob_vit_loca_nor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "prob_vit_loca_nor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob vit loca nor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prob_vit_loca_nor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "match.prob_vit_vis_nor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "prob_vit_vis_nor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob vit vis nor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prob_vit_vis_nor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "match.prob_empate_nor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "prob_empate_nor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prob empate nor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prob_empate_nor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prediccion vs real": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Prediccion_vs_Real": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.partido_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "PartidoID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "partido ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PartidoID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "partido identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "partido identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "partido identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "partido credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.equipo_local": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "EquipoLocal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo local": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EquipoLocal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.equipo_visitante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "EquipoVisitante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo visitante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "EquipoVisitante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.resultado_real": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "Resultado_real"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultado real": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Resultado_real": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Resultado Real ↓ \\ Predicción →": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.resultado_predicción": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "Resultado_predicción"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultado predicción": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Resultado_predicción": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -16361,6 +16729,402 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "teams_have_matches"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_resultado_predicción": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.resultado_predicción": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.resultado_predicción"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.resultado_predicción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_resultado_prediccións"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_resultado_real": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.resultado_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.resultado_real"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.resultado_real"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_resultado_reals"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_equipo_visitante": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.equipo_visitante": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.equipo_visitante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.equipo_visitante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_equipo_visitantes"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_equipo_local": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.equipo_local": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.equipo_local"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.equipo_local"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_equipo_locals"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_partido_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.partido_ID": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.partido_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.partido_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_partido_ID"
+			        }
+			      ]
+			    },
+			    "match_has_prob_empate_nor": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_empate_nor": {
+			          "Target": {
+			            "Entity": "match.prob_empate_nor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_empate_nor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_empate_nor"
+			        }
+			      ]
+			    },
+			    "match_has_prob_vit_vis_nor": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_vit_vis_nor": {
+			          "Target": {
+			            "Entity": "match.prob_vit_vis_nor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_vit_vis_nor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_vit_vis_nor"
+			        }
+			      ]
+			    },
+			    "match_has_prob_vit_loca_nor": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_vit_loca_nor": {
+			          "Target": {
+			            "Entity": "match.prob_vit_loca_nor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_vit_loca_nor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_vit_loca_nor"
+			        }
+			      ]
+			    },
+			    "match_has_total_prov": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.total_prov": {
+			          "Target": {
+			            "Entity": "match.total_prov"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.total_prov"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_total_prov"
+			        }
+			      ]
+			    },
+			    "match_has_prob_empate": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_empate": {
+			          "Target": {
+			            "Entity": "match.prob_empate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_empate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_empate"
+			        }
+			      ]
+			    },
+			    "match_has_prob_victoria_visitante": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_victoria_visitante": {
+			          "Target": {
+			            "Entity": "match.prob_victoria_visitante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_victoria_visitante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_victoria_visitante"
+			        }
+			      ]
+			    },
+			    "match_has_prob_victoria_local": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "match.prob_victoria_local": {
+			          "Target": {
+			            "Entity": "match.prob_victoria_local"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "match.prob_victoria_local"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prob_victoria_local"
 			        }
 			      ]
 			    },

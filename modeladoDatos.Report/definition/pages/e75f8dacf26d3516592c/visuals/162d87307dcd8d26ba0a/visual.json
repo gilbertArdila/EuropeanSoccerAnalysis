@@ -6,7 +6,8 @@
     "y": 41.296027483427729,
     "z": 1000,
     "height": 98.944966613441721,
-    "width": 98.549186746987957
+    "width": 98.549186746987957,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "shape",
@@ -45,7 +46,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": 0
                     }
                   }

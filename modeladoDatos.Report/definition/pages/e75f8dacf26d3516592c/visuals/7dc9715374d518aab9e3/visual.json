@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "7dc9715374d518aab9e3",
+  "position": {
+    "x": 248.53415195702223,
+    "y": 515.73292402148877,
+    "z": 10001,
+    "height": 144.40521872601687,
+    "width": 519.66231772831918
+  },
+  "visualGroup": {
+    "displayName": "real vs predicciones",
+    "groupMode": "ScaleMode"
+  }
+}

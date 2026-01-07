@@ -4,9 +4,10 @@
   "position": {
     "x": 408.65694551036069,
     "y": 21.61166538756715,
-    "z": 5000,
+    "z": 6000,
     "height": 179.76976208749039,
-    "width": 179.76976208749039
+    "width": 179.76976208749039,
+    "tabOrder": 9000
   },
   "visualGroup": {
     "displayName": "Posibilidad victoria local",

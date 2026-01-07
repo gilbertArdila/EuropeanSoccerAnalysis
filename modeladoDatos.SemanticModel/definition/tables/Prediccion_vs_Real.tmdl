@@ -1,0 +1,81 @@
+table Prediccion_vs_Real
+	lineageTag: 1d3d00ef-b650-479c-bae7-6bc7fc8bcf85
+
+	measure Color_formato =
+			
+			IF(
+			    SELECTEDVALUE( Prediccion_vs_Real[Resultado_real]) = SELECTEDVALUE(Prediccion_vs_Real[Resultado_predicción]),
+			    "#4CD1A1", //Verde claro
+			    "#E57373" // Rojo claro
+			)
+		lineageTag: fedb050d-092b-4f7e-9b4c-129d87a40751
+
+	column PartidoID
+		formatString: 0
+		lineageTag: 40ffe770-91e2-4c84-8d27-393d2ea55add
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [PartidoID]
+
+		annotation SummarizationSetBy = Automatic
+
+	column EquipoLocal
+		formatString: 0
+		lineageTag: a33bb385-5894-4301-9098-0f65f0f567ad
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [EquipoLocal]
+
+		annotation SummarizationSetBy = Automatic
+
+	column EquipoVisitante
+		formatString: 0
+		lineageTag: 03416dd8-9319-454d-9278-345ca5b2fb1f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [EquipoVisitante]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resultado_real
+		lineageTag: ea494b2f-656e-462d-a2df-873fb1d3dbc4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Resultado_real]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resultado_predicción
+		lineageTag: c2994fe9-46a5-4833-a94f-88d7eceec8d5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Resultado_predicción]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Prediccion_vs_Real = calculated
+		mode: import
+		source = ```
+				
+				SELECTCOLUMNS(
+				    Match,
+				    "PartidoID", Match[match_api_id],
+				    "EquipoLocal", Match[home_team_api_id],
+				    "EquipoVisitante", Match[away_team_api_id],
+				    "Resultado_real", 
+				          SWITCH( TRUE(), 
+				                  Match[home_team_goal] > Match[away_team_goal], "Victoria local",
+				                  Match[home_team_goal] < Match[away_team_goal], "Victoria visitante", 
+				                  "Empate"
+				                 ),
+				    "Resultado_predicción", 
+				            SWITCH( TRUE(),
+				                        (1 / Match[B365H]) > (1 / Match[B365D]) && (1 / Match[B365H]) > (1 / Match[B365A]), "Victoria local",
+				                        (1 / Match[B365D]) > (1 / Match[B365H]) && (1 / Match[B365D]) > (1 / Match[B365A]), "Empate",
+				                         "Victoria visitante"
+				                    )
+				)
+				```
+
+	annotation PBI_Id = 3a3390b6a0954964a12bb826543a1ac6
+

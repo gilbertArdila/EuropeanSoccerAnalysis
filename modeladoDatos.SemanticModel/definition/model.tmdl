@@ -26,6 +26,7 @@ ref table LocalDateTable_5125694f-4a9d-4417-9a22-0b43c49403e8
 ref table PlayerAppearance
 ref table Calendario
 ref table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
+ref table Prediccion_vs_Real
 
 ref cultureInfo es-ES
 

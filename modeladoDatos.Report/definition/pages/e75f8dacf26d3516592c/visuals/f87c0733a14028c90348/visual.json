@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "05ac46e67012bbc9ee24",
+  "name": "f87c0733a14028c90348",
   "position": {
-    "x": 357.33333333333331,
-    "y": 8.88888888888889,
-    "z": 8000,
+    "x": 57.777777777777771,
+    "y": 0,
+    "z": 10000,
     "height": 112,
     "width": 462.22222222222223,
-    "tabOrder": 5000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Resultados basados en las cuotas de apuestas",
+                    "value": "Resultado real vs Predicción basada en cuotas",
                     "textStyle": {
                       "color": "#ffffff"
                     }
@@ -47,5 +47,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "7dc9715374d518aab9e3"
 }

@@ -6,7 +6,8 @@
     "y": 0,
     "z": 4000,
     "height": 180,
-    "width": 180
+    "width": 180,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "donutChart",
@@ -113,7 +114,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": 0
                     }
                   }
@@ -139,7 +140,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 3,
                       "Percent": 0
                     }
                   }
@@ -164,9 +165,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#4072A3'"
                     }
                   }
                 }

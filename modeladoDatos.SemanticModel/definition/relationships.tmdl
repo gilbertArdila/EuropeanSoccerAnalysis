@@ -55,3 +55,9 @@ relationship aa79e860-cd3a-bfee-4fe9-4f0e3e1a542c
 	fromColumn: Match.date
 	toColumn: Calendario.Date
 
+relationship a0e7b3b2-6cd6-10d4-2e04-ffee714976d4
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Match.match_api_id
+	toColumn: Prediccion_vs_Real.PartidoID
+

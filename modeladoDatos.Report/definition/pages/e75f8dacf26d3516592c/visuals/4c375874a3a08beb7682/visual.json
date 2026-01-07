@@ -6,7 +6,8 @@
     "y": 0,
     "z": 3000,
     "height": 180.53614457831327,
-    "width": 179.81400000000002
+    "width": 179.81400000000002,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "donutChart",
@@ -22,11 +23,11 @@
                       "Entity": "Match"
                     }
                   },
-                  "Property": "prob_empate_nor"
+                  "Property": "prob_vit_loca_nor"
                 }
               },
-              "queryRef": "Match.prob_empate_nor",
-              "nativeQueryRef": "prob_empate_nor"
+              "queryRef": "Match.prob_vit_loca_nor",
+              "nativeQueryRef": "prob_vit_loca_nor"
             },
             {
               "field": {
@@ -36,11 +37,11 @@
                       "Entity": "Match"
                     }
                   },
-                  "Property": "prob_vit_loca_nor"
+                  "Property": "prob_empate_nor"
                 }
               },
-              "queryRef": "Match.prob_vit_loca_nor",
-              "nativeQueryRef": "prob_vit_loca_nor"
+              "queryRef": "Match.prob_empate_nor",
+              "nativeQueryRef": "prob_empate_nor"
             },
             {
               "field": {
@@ -69,7 +70,7 @@
                     "Entity": "Match"
                   }
                 },
-                "Property": "prob_empate_nor"
+                "Property": "prob_vit_loca_nor"
               }
             },
             "direction": "Descending"
@@ -138,8 +139,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#118dff'"
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
                     }
                   }
                 }
@@ -163,8 +165,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#118dff'"
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
                     }
                   }
                 }

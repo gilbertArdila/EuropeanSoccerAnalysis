@@ -6,7 +6,8 @@
     "y": 39.869041382923029,
     "z": 2000,
     "height": 98.651126244106862,
-    "width": 98.651126244106862
+    "width": 98.651126244106862,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "shape",
@@ -44,8 +45,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#118dff'"
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
                     }
                   }
                 }
