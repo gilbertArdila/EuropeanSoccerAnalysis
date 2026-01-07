@@ -5,6 +5,29 @@ table Calendario
 		formatString: 0
 		lineageTag: e06c3ab9-a969-410f-a48c-0eeb0730f70e
 
+	measure promedio_goles_local = ```
+			AVERAGEX( 
+			                                 Match,
+			                                 Match[home_team_goal] - Match[away_team_goal]
+			)
+			```
+		lineageTag: 8d40544e-0843-43e4-9359-3cb292b594dc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure promedio_goles_visitante = ```
+			CALCULATE(
+			                            AVERAGEX(
+			                                     Match,
+			                                     Match[away_team_goal] - Match[home_team_goal]
+			                                    ),
+			                            USERELATIONSHIP(Match[away_team_api_id], Team[team_api_id])
+			)         
+			```
+		lineageTag: 7e8292ef-4c9c-42f6-9b07-d5e9936b4049
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Date
 		formatString: General Date
 		lineageTag: 6ec83f35-d5db-4101-b7ab-fb5445f7d65b

@@ -15504,6 +15504,95 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "calendario.promedio_goles_local": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "promedio_goles_local"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio goles local": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "promedio_goles_local": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Promedio goles como local": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real.color_formato": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Prediccion_vs_Real",
+			          "ConceptualProperty": "Color_formato"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "color formato": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Color_formato": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.promedio_goles_visitante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "promedio_goles_visitante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio goles visitante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "promedio_goles_visitante": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Promedio goles como visitante": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -16299,6 +16388,39 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "prediccion_vs_real_has_match": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "match"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_matches"
+			        }
+			      ]
+			    },
 			    "player_appearance_has_match": {
 			      "Binding": {
 			        "ConceptualEntity": "PlayerAppearance"
@@ -16531,6 +16653,39 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "match_has_prediccion_vs_real": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_prediccion_vs_reals"
+			        }
+			      ]
+			    },
 			    "match_has_calendario": {
 			      "Binding": {
 			        "ConceptualEntity": "Match"
@@ -16729,6 +16884,138 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "teams_have_matches"
+			        }
+			      ]
+			    },
+			    "match_has_team_total_goles_local_2010_2011": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "team.total_goles_local_2010_2011": {
+			          "Target": {
+			            "Entity": "team.total_goles_local_2010_2011"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "team.total_goles_local_2010_2011"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_total_goles_local_2010_2011"
+			        }
+			      ]
+			    },
+			    "match_has_calendario_promedio_goles_visitante": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "calendario.promedio_goles_visitante": {
+			          "Target": {
+			            "Entity": "calendario.promedio_goles_visitante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "calendario.promedio_goles_visitante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_promedio_goles_visitante"
+			        }
+			      ]
+			    },
+			    "prediccion_vs_real_has_color_formato": {
+			      "Binding": {
+			        "ConceptualEntity": "Prediccion_vs_Real"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prediccion_vs_real": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real"
+			          }
+			        },
+			        "prediccion_vs_real.color_formato": {
+			          "Target": {
+			            "Entity": "prediccion_vs_real.color_formato"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prediccion_vs_real"
+			            },
+			            "Object": {
+			              "Role": "prediccion_vs_real.color_formato"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prediccion_vs_reals_have_color_formato"
+			        }
+			      ]
+			    },
+			    "match_has_calendario_promedio_goles_local": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "calendario.promedio_goles_local": {
+			          "Target": {
+			            "Entity": "calendario.promedio_goles_local"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "calendario.promedio_goles_local"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_promedio_goles_local"
 			        }
 			      ]
 			    },

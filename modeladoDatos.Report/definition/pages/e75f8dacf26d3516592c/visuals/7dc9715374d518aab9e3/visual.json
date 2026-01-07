@@ -4,9 +4,10 @@
   "position": {
     "x": 248.53415195702223,
     "y": 515.73292402148877,
-    "z": 10001,
+    "z": 9000,
     "height": 144.40521872601687,
-    "width": 519.66231772831918
+    "width": 519.66231772831918,
+    "tabOrder": 6000
   },
   "visualGroup": {
     "displayName": "real vs predicciones",

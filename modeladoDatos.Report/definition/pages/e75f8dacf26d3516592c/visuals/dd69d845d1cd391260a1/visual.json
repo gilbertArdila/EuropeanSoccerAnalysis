@@ -1,77 +1,64 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "2aa895985798cede811b",
+  "name": "dd69d845d1cd391260a1",
   "position": {
-    "x": 0,
-    "y": 39.111111111111143,
-    "z": 9000,
-    "height": 105.77777777777777,
-    "width": 471.11111111111109,
-    "tabOrder": 6000
+    "x": 819.55555555555554,
+    "y": 35.555555555555557,
+    "z": 10000,
+    "height": 220.44444444444446,
+    "width": 368.88888888888891,
+    "tabOrder": 7000
   },
   "visual": {
-    "visualType": "pivotTable",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Prediccion_vs_Real"
-                    }
-                  },
-                  "Property": "Resultado_predicción"
-                }
-              },
-              "queryRef": "Prediccion_vs_Real.Resultado_predicción",
-              "nativeQueryRef": "Resultado_predicción",
-              "active": true
-            }
-          ]
-        },
-        "Rows": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Prediccion_vs_Real"
-                    }
-                  },
-                  "Property": "Resultado_real"
-                }
-              },
-              "queryRef": "Prediccion_vs_Real.Resultado_real",
-              "nativeQueryRef": "Resultado Real ↓ \\ Predicción →",
-              "active": true,
-              "displayName": "Resultado Real ↓ \\ Predicción →"
-            }
-          ]
-        },
         "Values": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Column": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Prediccion_vs_Real"
-                        }
-                      },
-                      "Property": "PartidoID"
+                    "SourceRef": {
+                      "Entity": "Team"
                     }
                   },
-                  "Function": 5
+                  "Property": "team_long_name"
                 }
               },
-              "queryRef": "CountNonNull(Prediccion_vs_Real.PartidoID)",
-              "nativeQueryRef": "Recuento de PartidoID"
+              "queryRef": "Team.team_long_name",
+              "nativeQueryRef": "Equipo",
+              "displayName": "Equipo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendario"
+                    }
+                  },
+                  "Property": "promedio_goles_local"
+                }
+              },
+              "queryRef": "Calendario.promedio_goles_local",
+              "nativeQueryRef": "Promedio goles como local",
+              "displayName": "Promedio goles como local"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendario"
+                    }
+                  },
+                  "Property": "promedio_goles_visitante"
+                }
+              },
+              "queryRef": "Calendario.promedio_goles_visitante",
+              "nativeQueryRef": "Promedio goles como visitante",
+              "displayName": "Promedio goles como visitante"
             }
           ]
         }
@@ -83,32 +70,57 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Prediccion_vs_Real"
+                    "Entity": "Team"
                   }
                 },
-                "Property": "Resultado_real"
+                "Property": "team_long_name"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
     },
     "objects": {
-      "subTotals": [
+      "total": [
         {
           "properties": {
-            "columnSubtotals": {
+            "totals": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             },
-            "rowSubtotals": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "9D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -139,6 +151,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
                 }
               }
             }
@@ -175,57 +194,52 @@
           }
         }
       ],
-      "columnHeaders": [
+      "columnWidth": [
         {
           "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "138.01631277924793D"
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Team.team_long_name"
           }
-        }
-      ],
-      "rowHeaders": [
+        },
         {
           "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90.11103849896165D"
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Calendario.promedio_goles_local"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118.66666666666667D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Calendario.promedio_goles_visitante"
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'None'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "background": [
         {
           "properties": {
@@ -271,9 +285,21 @@
             }
           }
         }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "7dc9715374d518aab9e3"
+  }
 }
