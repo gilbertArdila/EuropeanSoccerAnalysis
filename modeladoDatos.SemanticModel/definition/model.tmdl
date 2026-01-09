@@ -27,6 +27,8 @@ ref table PlayerAppearance
 ref table Calendario
 ref table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 ref table Prediccion_vs_Real
+ref table Tabla_puente
+ref table Top_5_jugadores
 
 ref cultureInfo es-ES
 

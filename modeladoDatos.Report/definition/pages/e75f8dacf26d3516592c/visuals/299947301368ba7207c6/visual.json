@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "League"
+                      "Entity": "Tabla_puente"
                     }
                   },
-                  "Property": "name"
+                  "Property": "NombreLiga"
                 }
               },
-              "queryRef": "League.name",
+              "queryRef": "Tabla_puente.NombreLiga",
               "nativeQueryRef": "Liga",
               "active": true,
               "displayName": "Liga"

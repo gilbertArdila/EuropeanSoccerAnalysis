@@ -21,7 +21,7 @@ table Calendario
 			                                     Match,
 			                                     Match[away_team_goal] - Match[home_team_goal]
 			                                    ),
-			                            USERELATIONSHIP(Match[away_team_api_id], Team[team_api_id])
+			                            USERELATIONSHIP(Match[away_team_api_id], Tabla_puente[team_api_id])
 			)         
 			```
 		lineageTag: 7e8292ef-4c9c-42f6-9b07-d5e9936b4049

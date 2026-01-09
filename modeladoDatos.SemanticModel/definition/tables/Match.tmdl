@@ -33,6 +33,26 @@ table Match
 		formatString: 0\ %;-0\ %;0\ %
 		lineageTag: f77cdc4c-0117-4c57-b590-14b68f8cbcf6
 
+	measure Total_Victorias = ```
+			
+			VAR EquipoID = SELECTEDVALUE(Tabla_puente[team_api_id])
+			VAR VictoriasLocal = 
+			      CALCULATE( 
+			        COUNTROWS(Match),
+			         Match[home_team_api_id] = EquipoID,
+			         Match[home_team_goal] > Match[away_team_goal]
+			      )
+			VAR VictoriasVisitante = 
+			      CALCULATE( 
+			        COUNTROWS(Match),
+			         Match[away_team_api_id] = EquipoID,
+			         Match[home_team_goal] < Match[away_team_goal]
+			      )      
+			RETURN VictoriasLocal + VictoriasVisitante      
+			```
+		formatString: 0
+		lineageTag: 89844959-c13c-4063-85dd-47d39eab62a7
+
 	column id
 		dataType: int64
 		formatString: 0

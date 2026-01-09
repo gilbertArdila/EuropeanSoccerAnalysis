@@ -402,16 +402,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.714
 			          }
-			        },
-			        {
-			          "Liga": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ],
 			      "NameType": "Name"
@@ -754,6 +744,16 @@ cultureInfo es-ES
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Jugador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -10165,16 +10165,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Equipo": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -15124,16 +15114,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Team": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -15593,75 +15573,472 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "tabla_puente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_puente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla puente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tabla_puente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "puente": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_puente.team_api_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_puente",
+			          "ConceptualProperty": "team_api_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "team api id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "team_api_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "api": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "team api": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "api id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "team api identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "team api identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "team api identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "api identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "api identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "api identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "team api credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "api credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_puente.league_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_puente",
+			          "ConceptualProperty": "league_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "league id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "league_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "league identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "league identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "league identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "league credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_puente.nombre_equipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_puente",
+			          "ConceptualProperty": "NombreEquipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre equipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NombreEquipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Equipo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_puente.nombre_liga": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_puente",
+			          "ConceptualProperty": "NombreLiga"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre liga": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NombreLiga": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Liga": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "match.total_victorias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Match",
+			          "ConceptualProperty": "Total_Victorias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total victorias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Victorias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "victorias": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate victoria": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall victoria": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "player_attribute.promedio_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Player_Attributes",
+			          "ConceptualProperty": "Promedio_rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promedio rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Promedio_rating": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "promedio assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "promedio evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "promedio score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "promedio grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "promedio ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "promedio mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "promedio sailor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "promedio seaman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "promedio hand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "player_attribute.ranking_jugador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Player_Attributes",
+			          "ConceptualProperty": "Ranking_jugador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking jugador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ranking_jugador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "team_attribute_date_jerarquía_de_fecha_has_team_attribute_date_año": {
-			      "Binding": {
-			        "ConceptualEntity": "Team_Attributes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "team_attribute.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "team_attribute.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "team_attribute.date.año": {
-			          "Target": {
-			            "Entity": "team_attribute.date.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "team_attribute.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "team_attribute.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años"
-			        }
-			      ]
-			    },
-			    "team_attribute_date_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "Team_Attributes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "team_attribute.date": {
-			          "Target": {
-			            "Entity": "team_attribute.date"
-			          }
-			        },
-			        "team_attribute.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "team_attribute.date.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "team_attribute.date"
-			            },
-			            "Object": {
-			              "Role": "team_attribute.date.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas"
-			        }
-			      ]
-			    },
 			    "player_attribute_date_me_has_player_attribute_date_día": {
 			      "Binding": {
 			        "ConceptualEntity": "Player_Attributes"
@@ -15988,7 +16365,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años1"
+			          "ID": "jerarquía_de_fechas_have_años"
 			        }
 			      ]
 			    },
@@ -16021,7 +16398,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas1"
+			          "ID": "dates_have_jerarquía_de_fechas"
 			        }
 			      ]
 			    },
@@ -16351,7 +16728,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años2"
+			          "ID": "jerarquía_de_fechas_have_años1"
 			        }
 			      ]
 			    },
@@ -16537,6 +16914,64 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "team_attribute_has_tabla_puente": {
+			      "Binding": {
+			        "ConceptualEntity": "Team_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team_attribute": {
+			          "Target": {
+			            "Entity": "team_attribute"
+			          }
+			        },
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          },
+			          "Nouns": [
+			            {
+			              "api": {
+			                "State": "Generated"
+			              }
+			            },
+			            {
+			              "team api": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team_attribute"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "team_attributes_have_tabla_puente"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "team_attribute"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_team_attributes"
+			        }
+			      ]
+			    },
 			    "team_attribute_has_team": {
 			      "Binding": {
 			        "ConceptualEntity": "Team_Attributes"
@@ -16650,6 +17085,69 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "players_have_player_attributes"
+			        }
+			      ]
+			    },
+			    "match_has_tabla_puente": {
+			      "Binding": {
+			        "ConceptualEntity": "Match"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "match": {
+			          "Target": {
+			            "Entity": "match"
+			          }
+			        },
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          },
+			          "Nouns": [
+			            {
+			              "api": {
+			                "State": "Generated"
+			              }
+			            },
+			            {
+			              "team api": {
+			                "State": "Generated"
+			              }
+			            },
+			            {
+			              "home team api": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "match"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "matches_have_tabla_puente"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "match"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_matches"
 			        }
 			      ]
 			    },
@@ -16887,7 +17385,73 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "match_has_team_total_goles_local_2010_2011": {
+			    "player_attribute_has_ranking_jugador": {
+			      "Binding": {
+			        "ConceptualEntity": "Player_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player_attribute": {
+			          "Target": {
+			            "Entity": "player_attribute"
+			          }
+			        },
+			        "player_attribute.ranking_jugador": {
+			          "Target": {
+			            "Entity": "player_attribute.ranking_jugador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player_attribute"
+			            },
+			            "Object": {
+			              "Role": "player_attribute.ranking_jugador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "player_attributes_have_ranking_jugador"
+			        }
+			      ]
+			    },
+			    "player_attribute_has_promedio_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "Player_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player_attribute": {
+			          "Target": {
+			            "Entity": "player_attribute"
+			          }
+			        },
+			        "player_attribute.promedio_rating": {
+			          "Target": {
+			            "Entity": "player_attribute.promedio_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player_attribute"
+			            },
+			            "Object": {
+			              "Role": "player_attribute.promedio_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "player_attributes_have_promedio_rating"
+			        }
+			      ]
+			    },
+			    "match_has_total_victorias": {
 			      "Binding": {
 			        "ConceptualEntity": "Match"
 			      },
@@ -16898,9 +17462,9 @@ cultureInfo es-ES
 			            "Entity": "match"
 			          }
 			        },
-			        "team.total_goles_local_2010_2011": {
+			        "match.total_victorias": {
 			          "Target": {
-			            "Entity": "team.total_goles_local_2010_2011"
+			            "Entity": "match.total_victorias"
 			          }
 			        }
 			      },
@@ -16911,12 +17475,144 @@ cultureInfo es-ES
 			              "Role": "match"
 			            },
 			            "Object": {
-			              "Role": "team.total_goles_local_2010_2011"
+			              "Role": "match.total_victorias"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "matches_have_total_goles_local_2010_2011"
+			          "ID": "matches_have_total_victorias"
+			        }
+			      ]
+			    },
+			    "tabla_puente_has_nombre_liga": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla_puente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          }
+			        },
+			        "tabla_puente.nombre_liga": {
+			          "Target": {
+			            "Entity": "tabla_puente.nombre_liga"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente.nombre_liga"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_nombre_ligas"
+			        }
+			      ]
+			    },
+			    "tabla_puente_has_nombre_equipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla_puente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          }
+			        },
+			        "tabla_puente.nombre_equipo": {
+			          "Target": {
+			            "Entity": "tabla_puente.nombre_equipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente.nombre_equipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_nombre_equipos"
+			        }
+			      ]
+			    },
+			    "tabla_puente_has_league_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla_puente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          }
+			        },
+			        "tabla_puente.league_id": {
+			          "Target": {
+			            "Entity": "tabla_puente.league_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente.league_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_league_ids"
+			        }
+			      ]
+			    },
+			    "tabla_puente_has_team_api_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla_puente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_puente": {
+			          "Target": {
+			            "Entity": "tabla_puente"
+			          }
+			        },
+			        "tabla_puente.team_api_id": {
+			          "Target": {
+			            "Entity": "tabla_puente.team_api_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_puente"
+			            },
+			            "Object": {
+			              "Role": "tabla_puente.team_api_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_puente_have_team_api_ids"
 			        }
 			      ]
 			    },
@@ -24809,6 +25505,72 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.75,
 			          "ID": "players_play"
+			        }
+			      ]
+			    },
+			    "team_attribute_date_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Team_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team_attribute.date": {
+			          "Target": {
+			            "Entity": "team_attribute.date"
+			          }
+			        },
+			        "team_attribute.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "team_attribute.date.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team_attribute.date"
+			            },
+			            "Object": {
+			              "Role": "team_attribute.date.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_jerarquía_de_fechas1"
+			        }
+			      ]
+			    },
+			    "team_attribute_date_jerarquía_de_fecha_has_team_attribute_date_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Team_Attributes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "team_attribute.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "team_attribute.date.jerarquía_de_fecha"
+			          }
+			        },
+			        "team_attribute.date.año": {
+			          "Target": {
+			            "Entity": "team_attribute.date.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "team_attribute.date.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "team_attribute.date.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años2"
 			        }
 			      ]
 			    },

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "dd69d845d1cd391260a1",
+  "name": "5fd6cb858c1570ac4618",
   "position": {
-    "x": 819.75903614457832,
-    "y": 36.144578313253014,
-    "z": 10000,
-    "height": 245.7831325301205,
-    "width": 459.75903614457832,
-    "tabOrder": 7000
+    "x": 835.66265060240971,
+    "y": 329.63855421686748,
+    "z": 10001,
+    "height": 190.84337349397592,
+    "width": 426.50602409638554,
+    "tabOrder": 7001
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,60 +20,43 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Tabla_puente"
+                      "Entity": "Player"
                     }
                   },
-                  "Property": "NombreEquipo"
+                  "Property": "player_name"
                 }
               },
-              "queryRef": "Tabla_puente.NombreEquipo",
-              "nativeQueryRef": "Equipo",
-              "displayName": "Equipo"
+              "queryRef": "Player.player_name",
+              "nativeQueryRef": "Jugador",
+              "displayName": "Jugador"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Match"
+                      "Entity": "Player_Attributes"
                     }
                   },
-                  "Property": "Total_Victorias"
+                  "Property": "Promedio_rating"
                 }
               },
-              "queryRef": "Match.Total_Victorias",
-              "nativeQueryRef": "Victorias",
-              "displayName": "Victorias"
+              "queryRef": "Player_Attributes.Promedio_rating",
+              "nativeQueryRef": "Promedio_rating"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendario"
+                      "Entity": "Player_Attributes"
                     }
                   },
-                  "Property": "promedio_goles_local"
+                  "Property": "Ranking_jugador"
                 }
               },
-              "queryRef": "Calendario.promedio_goles_local",
-              "nativeQueryRef": "Promedio goles como local",
-              "displayName": "Promedio goles como local"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calendario"
-                    }
-                  },
-                  "Property": "promedio_goles_visitante"
-                }
-              },
-              "queryRef": "Calendario.promedio_goles_visitante",
-              "nativeQueryRef": "Promedio goles como visitante",
-              "displayName": "Promedio goles como visitante"
+              "queryRef": "Player_Attributes.Ranking_jugador",
+              "nativeQueryRef": "Ranking_jugador"
             }
           ]
         }
@@ -85,46 +68,21 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Match"
+                    "Entity": "Player_Attributes"
                   }
                 },
-                "Property": "Total_Victorias"
+                "Property": "Ranking_jugador"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
     },
     "objects": {
-      "total": [
-        {
-          "properties": {
-            "totals": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "columnHeaders": [
         {
           "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -138,6 +96,18 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -145,6 +115,13 @@
       "values": [
         {
           "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
             "fontColorPrimary": {
               "solid": {
                 "color": {
@@ -166,13 +143,6 @@
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
                 }
               }
             }
@@ -255,6 +225,19 @@
       ]
     },
     "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "background": [
         {
           "properties": {
@@ -269,19 +252,6 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

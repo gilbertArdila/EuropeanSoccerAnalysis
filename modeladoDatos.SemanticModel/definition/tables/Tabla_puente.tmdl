@@ -1,0 +1,51 @@
+table Tabla_puente
+	lineageTag: 0ca04d80-1d8d-4b0e-a17d-1609023f05f9
+
+	column team_api_id
+		formatString: 0
+		lineageTag: 93589686-ab78-427b-adf2-4ef91723c983
+		summarizeBy: none
+		sourceColumn: Match[home_team_api_id]
+
+		annotation SummarizationSetBy = Automatic
+
+	column league_id
+		formatString: 0
+		lineageTag: 47c74f73-0e50-47ad-9519-2263f50ca651
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: Match[league_id]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreEquipo
+		lineageTag: d5182687-160b-4123-9ed7-284a3e408539
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NombreEquipo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreLiga
+		lineageTag: 73b46c92-322c-4871-b414-dd176f2cc9b6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NombreLiga]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Tabla_puente = calculated
+		mode: import
+		source =
+				ADDCOLUMNS(
+				                           SUMMARIZE(
+				                                      Match,
+				                                      Match[home_team_api_id],
+				                                      Match[league_id]
+				                           ),
+				                           "NombreEquipo", LOOKUPVALUE(Team[Unique_team_long_name],Team[team_api_id],Match[home_team_api_id]),
+				                           "NombreLiga", LOOKUPVALUE(League[name],League[id],Match[league_id])
+				)
+
+	annotation PBI_Id = 8fc44424e11f449c89b004c84be8313a
+

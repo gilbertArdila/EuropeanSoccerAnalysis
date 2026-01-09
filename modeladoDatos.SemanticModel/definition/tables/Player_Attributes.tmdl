@@ -1,6 +1,27 @@
 table Player_Attributes
 	lineageTag: 598c472c-ddd2-46ba-95e9-71894263712d
 
+	measure Promedio_rating =
+			AVERAGEX(
+			     FILTER(
+			            Player_Attributes,
+			            Player_Attributes[player_api_id] = SELECTEDVALUE(Player[player_api_id])
+			     ),
+			     Player_Attributes[overall_rating]
+			)
+		lineageTag: 49fd453a-5276-46bb-b6fd-0d0851ffd306
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ranking_jugador =
+			RANKX(
+			    ALL(Player[player_name]),
+			    [Promedio_rating],
+			    ,DESC,Dense
+			)
+		formatString: 0
+		lineageTag: 37d3b6a5-e562-4932-aa2d-709b9837409b
+
 	column id
 		dataType: int64
 		formatString: 0

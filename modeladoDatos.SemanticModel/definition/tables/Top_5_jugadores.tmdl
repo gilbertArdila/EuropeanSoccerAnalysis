@@ -1,0 +1,49 @@
+table Top_5_jugadores
+	lineageTag: 3300d649-eaac-4cbe-a0ae-f47f8ab203b5
+
+	column player_name
+		lineageTag: 3a1c436b-61b7-4fe3-965e-d9831dc0da6d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Player[player_name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Promedio Rating'
+		lineageTag: 23983610-b689-409d-812e-dcea86c3a6cd
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Promedio Rating]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ranking
+		formatString: 0
+		lineageTag: 5aa2b529-fd13-4674-a9b3-e3ea54e50f07
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ranking]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Top_5_jugadores = calculated
+		mode: import
+		source = ```
+				
+				TOPN(
+				    5,
+				    ADDCOLUMNS(
+				        VALUES(Player[player_name]),
+				        "Promedio Rating", [Promedio_rating],
+				        "Ranking", [Ranking_jugador]
+				    ),
+				    [Promedio Rating],
+				    DESC
+				)
+				
+				```
+
+	annotation PBI_Id = 71f06f3c37294f01a4847cde4858820b
+

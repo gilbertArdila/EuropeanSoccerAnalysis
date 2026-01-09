@@ -61,3 +61,16 @@ relationship a0e7b3b2-6cd6-10d4-2e04-ffee714976d4
 	fromColumn: Match.match_api_id
 	toColumn: Prediccion_vs_Real.PartidoID
 
+relationship 2f83e65a-c371-4a02-fe5d-96e312c784d2
+	fromColumn: Match.home_team_api_id
+	toColumn: Tabla_puente.team_api_id
+
+relationship 911382d1-b6de-864d-09e1-4cc79e6dbc37
+	fromColumn: Team_Attributes.team_api_id
+	toColumn: Tabla_puente.team_api_id
+
+relationship 37bd0d39-f7c7-8eec-f3fc-f6e0dc61ff21
+	isActive: false
+	fromColumn: Match.away_team_api_id
+	toColumn: Tabla_puente.team_api_id
+

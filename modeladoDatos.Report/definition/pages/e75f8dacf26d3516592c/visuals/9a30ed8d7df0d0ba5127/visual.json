@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Team"
+                      "Entity": "Tabla_puente"
                     }
                   },
-                  "Property": "Unique_team_long_name"
+                  "Property": "NombreEquipo"
                 }
               },
-              "queryRef": "Team.Unique_team_long_name",
-              "nativeQueryRef": "Team",
+              "queryRef": "Tabla_puente.NombreEquipo",
+              "nativeQueryRef": "Equipo",
               "active": true,
-              "displayName": "Team"
+              "displayName": "Equipo"
             }
           ]
         },

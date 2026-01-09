@@ -5,6 +5,47 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e7621c6f7b70ae880111",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Player_Attributes"
+              }
+            },
+            "Property": "Ranking_jugador"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "2b5ada5178ee970dae0b",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "47b2eba15b4dc8880d2a",
+        "boundFilter": "e7621c6f7b70ae880111",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Player_Attributes"
+              }
+            },
+            "Property": "Ranking_jugador"
+          }
+        }
+      }
+    ]
+  },
   "objects": {
     "background": [
       {
