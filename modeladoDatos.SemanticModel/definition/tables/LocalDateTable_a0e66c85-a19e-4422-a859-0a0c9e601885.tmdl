@@ -7,7 +7,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		dataType: dateTime
 		isHidden
 		formatString: General Date
-		lineageTag: 574d3772-6035-4f75-960e-5a8a83ac1f5c
+		lineageTag: 5b96a7b6-65ec-4969-87db-85cf522db474
 		dataCategory: PaddedDateTableDates
 		summarizeBy: none
 		isNameInferred
@@ -19,7 +19,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 1afd82cb-9849-44c1-a051-9ee6aca6b487
+		lineageTag: 07067211-df5b-456a-9c86-36936fbce698
 		dataCategory: Years
 		summarizeBy: none
 
@@ -31,7 +31,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: f18f14fe-7db9-44d2-bdbf-de74d3190f0c
+		lineageTag: 063922c5-a485-4384-9713-e775787787ff
 		dataCategory: MonthOfYear
 		summarizeBy: none
 
@@ -42,7 +42,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 	column Mes = FORMAT([Date], "MMMM")
 		dataType: string
 		isHidden
-		lineageTag: 5fa01b5c-cd35-4b14-b8d3-73609902367e
+		lineageTag: 0bde4535-b9e8-485a-87d2-880955683278
 		dataCategory: Months
 		summarizeBy: none
 		sortByColumn: NroMes
@@ -55,7 +55,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 85ca94be-bd95-43ae-944c-22586caed551
+		lineageTag: 0464a215-c3b3-4c55-97b3-974c27a715e1
 		dataCategory: QuarterOfYear
 		summarizeBy: none
 
@@ -66,7 +66,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 	column Trimestre = "Qtr " & [NroTrimestre]
 		dataType: string
 		isHidden
-		lineageTag: 701a05c8-ab1a-45ee-8c6d-6557be3c32eb
+		lineageTag: d8a3006f-49e2-4ce7-a8df-965c219bd343
 		dataCategory: Quarters
 		summarizeBy: none
 		sortByColumn: NroTrimestre
@@ -79,7 +79,7 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 52017e88-ec49-4ad1-a48d-e6b24f212ef1
+		lineageTag: 05436017-d1ac-4160-8ff9-69bcec866e00
 		dataCategory: DayOfMonth
 		summarizeBy: none
 
@@ -88,22 +88,22 @@ table LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885
 		annotation TemplateId = Day
 
 	hierarchy 'Jerarquía de fechas'
-		lineageTag: 53bf5d22-f870-45b9-87e8-699bca5e6691
+		lineageTag: 6b9ea993-11bb-43a7-9864-b8cda2d06d76
 
 		level Año
-			lineageTag: 4b1db7b2-0069-46ff-a478-81178c7dc489
+			lineageTag: 13e93e51-c974-4cc1-96bf-20ca2bdfefd3
 			column: Año
 
 		level Trimestre
-			lineageTag: b305bc4e-61b5-4ddd-8f02-7cb12320e56a
+			lineageTag: b7e81af2-8a27-4b3c-98d2-f8cac2e0fef5
 			column: Trimestre
 
 		level Mes
-			lineageTag: 15511400-1e99-49ac-ba73-d556b5a6fefb
+			lineageTag: 02b73a98-af04-49a9-9080-50aa20d9f343
 			column: Mes
 
 		level Día
-			lineageTag: 5eb2885f-fd3b-43d7-89b7-4ebddd09e63b
+			lineageTag: 3ba6b56d-92a6-447a-bbaf-17be394acf08
 			column: Día
 
 		annotation TemplateId = DateHierarchy

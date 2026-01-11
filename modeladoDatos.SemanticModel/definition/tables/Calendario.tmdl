@@ -37,7 +37,7 @@ table Calendario
 
 		variation Variación
 			isDefault
-			relationship: d120a447-47e4-4419-b38d-f85500705a48
+			relationship: dfbae07a-5bc3-4f25-9a40-b4d7a2330ce1
 			defaultHierarchy: LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885.'Jerarquía de fechas'
 
 		annotation SummarizationSetBy = Automatic
@@ -104,7 +104,7 @@ table Calendario
 		mode: import
 		source =
 				ADDCOLUMNS(
-				    CALENDAR(DATE(2008,7,1), DATE(2018,6,30)),
+				    CALENDAR(DATE(2008,7,1), DATE(2016,6,30)),
 				    "Año", YEAR([Date]),
 				    "Mes", FORMAT([Date], "MMMM"),
 				    "MesN", MONTH([Date]),

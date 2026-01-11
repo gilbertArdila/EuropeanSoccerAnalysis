@@ -46,15 +46,6 @@ relationship 2a9c8201-6563-79ea-2889-e74a8bbdcfea
 	fromColumn: Player_Attributes.player_api_id
 	toColumn: Player.player_api_id
 
-relationship d120a447-47e4-4419-b38d-f85500705a48
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Calendario.Date
-	toColumn: LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885.Date
-
-relationship aa79e860-cd3a-bfee-4fe9-4f0e3e1a542c
-	fromColumn: Match.date
-	toColumn: Calendario.Date
-
 relationship a0e7b3b2-6cd6-10d4-2e04-ffee714976d4
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
@@ -73,4 +64,13 @@ relationship 37bd0d39-f7c7-8eec-f3fc-f6e0dc61ff21
 	isActive: false
 	fromColumn: Match.away_team_api_id
 	toColumn: Tabla_puente.team_api_id
+
+relationship dfbae07a-5bc3-4f25-9a40-b4d7a2330ce1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_a0e66c85-a19e-4422-a859-0a0c9e601885.Date
+
+relationship aa79e860-cd3a-bfee-4fe9-4f0e3e1a542c
+	fromColumn: Match.date
+	toColumn: Calendario.Date
 

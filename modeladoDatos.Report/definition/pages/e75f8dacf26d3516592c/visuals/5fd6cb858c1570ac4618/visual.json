@@ -65,13 +65,13 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Player_Attributes"
+                    "Entity": "Player"
                   }
                 },
-                "Property": "Ranking_jugador"
+                "Property": "player_name"
               }
             },
             "direction": "Ascending"
@@ -220,6 +220,19 @@
           },
           "selector": {
             "metadata": "Tabla_puente.NombreEquipo"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]
